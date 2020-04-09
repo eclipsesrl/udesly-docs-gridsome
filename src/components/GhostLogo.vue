@@ -1,0 +1,26 @@
+<template>
+<svg :width="width" :height="height" viewBox="0 0 85 87" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="evenodd" opacity=".6"><rect x=".209" y="69.017" width="33.643" height="17.014" rx="4"/><rect x="50.672" y="69.017" width="33.622" height="17.014" rx="4"/><rect x=".184" y="34.99" width="84.121" height="17.014" rx="4"/><rect x=".209" y=".964" width="50.469" height="17.013" rx="4"/><rect x="67.494" y=".964" width="16.821" height="17.013" rx="4"/></g></svg>
+</template>
+
+<script>
+export default {
+  props: {
+    width: {
+      type: Number,
+      default: 140
+    },
+    height: {
+      type: Number,
+      default: 60
+    }
+  },
+
+ 
+};
+</script>
+<style scoped>
+svg path {
+  fill: var(--color-ui-typo)!important;
+}
+</style>
+
