@@ -98,6 +98,7 @@ export default {
   },
   metaInfo() {
     return {
+      titleTemplate: '%s | Udesly Docs',
       meta: [
         {
           key: 'og:type',
@@ -329,7 +330,7 @@ table {
 }
 
 div[align='center'] {
-  padding: 15px 0;
+  padding-bottom: 15px;
   code {
     margin: auto 3px;
   }
@@ -362,4 +363,27 @@ code:empty {
   padding: 0.25rem 0.8rem;
   margin: auto 4px;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8351ff;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #8351ff;
+}
+
 </style>

@@ -4,6 +4,8 @@ sidebar: 'wordpress'
 prev: '/wordpress/'
 next: '/wordpress/page-types/'
 ---
+import Attribute from '@/components/Attribute.vue';
+import DynamicAttribute from '@/components/DynamicAttribute.vue';
 
 # Custom Attributes
 
@@ -29,21 +31,17 @@ An *Attribute* is defined by 2 parts:
 
 Through the doc you will find these custom attributes listed in 2 different ways:
 
-<div align="center">
- <code>name</code> <code class="value">value</code>
-</div>
+<Attribute name="name" value="value" />
 
 ---
 
 
-<div align="center">
- <code>name</code> <code class="dynamic-value">dynamic value</code>
-</div>
+<DynamicAttribute name="name" value="dynamic-value" />
 
 
 There are basically only *2* rules to never forget for custom attributes:
 
-1. When you see one of these 2 colors <code></code> <code class="value"></code>just copy and paste, do not invent your own attributes! 🙅‍♂️
+1. When you see one of these 2 colors <code></code> <code class="value"></code>just copy and paste, do not invent your own attributes! 🙅‍♂️ (try to click on them!)
 2. When you see this color instead <code class="dynamic-value"></code>, the value depends on the situation and will be explained at the right moment (sometimes you will invent it 🤷‍♂️)
 3. (The one to forget about) You don't need to add attributes to everything 🤦‍♂
 

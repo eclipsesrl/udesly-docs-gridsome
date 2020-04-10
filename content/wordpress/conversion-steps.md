@@ -31,7 +31,7 @@ Upload the .zip file of the template you've exported from Webflow, insert templa
 
 After the conversion the Adapter will automatically save on your pc the WordPress theme as a zip file.
 
-Open your WordPress Dashboard. Go to Appearance -> Themes and then click on the *Upload Theme* button.
+Open your WordPress Dashboard. Go to Appearance > Themes and then click on the *Upload Theme* button.
 
 <div align="center">
   <g-image src="~/assets/images/wordpress-upload-theme.jpg" />
@@ -50,13 +50,13 @@ If you don't have already the Udesly Plugin activated, you will get a notice jus
 ## Final Steps
 
 Every time you upload your theme you have to synchronize data and pages with WordPress CMS. You have to click just one button. 
-Follow the path: Udesly => Webflow Data and press on **Import**
+Follow the path: Udesly > Webflow Data and press on **Import**
 
 <div align="center">
   <g-image src="~/assets/images/wordpress-import-data.png" />
 </div>
 
-Also remember to set the homepage and the Posts page of your site following this path: Settings => Reading => Your homepage displays.
+Also remember to set the homepage and the Posts page of your site following this path: Settings > Reading > Your homepage displays.
 
 <div align="center">
   <g-image src="~/assets/images/page-setting.png" />

@@ -4,8 +4,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const wordpress = require('./wordpress.config')
+
 module.exports = {
-  siteName: 'Docs',
+  siteName: 'Udesly Adapter Docs',
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png',
@@ -15,6 +17,7 @@ module.exports = {
     web: 'https://www.udesly.com',
     twitter: process.env.URL_TWITTER || false,
     github: process.env.URL_GITHUB || false,
+    githubRepoBase: 'https://github.com/eclipsesrl/udesly-docs-gridsome/blob/master/content/',
     nav: {
       links: [
         {
@@ -25,41 +28,7 @@ module.exports = {
       ],
     },
     sidebar: [
-      {
-        name: 'docs',
-        sections: [
-          {
-            title: 'Getting Started',
-            items: [
-              '/docs/',
-              '/docs/installation/',
-              '/docs/writing-content/',
-              '/docs/deploying/',
-            ],
-          },
-          {
-            title: 'Configuration',
-            items: ['/docs/settings/', '/docs/sidebar/'],
-          },
-        ],
-      },
-      {
-        name: 'wordpress',
-        sections: [
-          {
-            title: 'Getting Started',
-            items: [
-              '/wordpress/',
-              '/wordpress/custom-attributes/',
-              '/wordpress/page-types/',
-              '/wordpress/elements/',
-              '/wordpress/conversion-steps/',
-              '/wordpress/glossary/',
-              '/wordpress/faqs/',
-            ],
-          },
-        ],
-      },
+      wordpress.sidebar
     ],
   },
   plugins: [
@@ -72,20 +41,6 @@ module.exports = {
         plugins: ['@gridsome/remark-prismjs'],
       },
     },
-
-    // {
-    //   use: '@gridsome/source-filesystem',
-    //   options: {
-    //     baseDir: './content',
-    //     path: '**/*.md',
-    //     typeName: 'MarkdownPage',
-    //     remark: {
-    //       externalLinksTarget: '_blank',
-    //       externalLinksRel: ['noopener', 'noreferrer'],
-    //       plugins: ['@gridsome/vue-remark'],
-    //     },
-    //   },
-    // },
     {
       use: 'gridsome-plugin-tailwindcss',
       options: {

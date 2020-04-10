@@ -14,3 +14,5 @@ You will find all the attributes divided and explained by section.
 <video autoplay="" muted="" playsinline="true" loop="">
  <source src="/assets/video/custom-attribute.webm">
 </video>
+
+Don't forget that you can just click on attributes to copy them, or you can also click on the button "Copy Element" where it is available to copy directly the element that you have to paste inside Webflow.

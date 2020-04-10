@@ -5,6 +5,8 @@ prev: '/wordpress/custom-attributes/'
 next: '/wordpress/elements'
 ---
 
+import Attribute from '@/components/Attribute.vue';
+
 # Page Types
 
 One usage of the custom attributes is to define what kind of page you are creating. 
@@ -77,9 +79,9 @@ A page can be generic or specific, if it's generic you don't need to add anythin
 this feature can be usefull if you want for example to create a different style for a Category of your Blog that is called "My Events Category". 
 For that need the attributes on the body would be
 
-<div align="center"><code>page</code> <code class="value">taxonomy</code></div>
-<div align="center"><code>post-type</code> <code class="value">category</code></div>
-<div align="center"><code>specific</code> <code class="value">my-events-category</code></div>
+<Attribute name="page" value="taxonomy" />
+<Attribute name="post-type" value="category" />
+<Attribute name="specific" value="my-events-category" />
 
 ***
 

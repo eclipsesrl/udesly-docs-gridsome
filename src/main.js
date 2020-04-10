@@ -3,10 +3,13 @@
 import DefaultLayout from '~/layouts/Default.vue';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
+import Notification from './plugins/notification';
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
+
+  Vue.use(Notification);
 
   NProgress.configure({ showSpinner: false });
 
