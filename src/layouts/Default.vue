@@ -386,4 +386,10 @@ code:empty {
 	background-color: #8351ff;
 }
 
+li.depth-5 {
+    padding-left: 5px;
+}
+h5 {
+  font-weight: bold;
+}
 </style>
