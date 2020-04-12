@@ -392,4 +392,8 @@ li.depth-5 {
 h5 {
   font-weight: bold;
 }
+
+.content a.no-underline {
+  text-decoration: none;
+}
 </style>

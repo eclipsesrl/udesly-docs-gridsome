@@ -1,7 +1,8 @@
 ---
 description: ''
 sidebar: 'wordpress'
-next: '/wordpress/blog/archive-elements/'
+prev: '/wordpress/blog/pages/'
+next: '/wordpress/blog/collection-item-elements/'
 ---
 import Attribute from '@/components/Attribute.vue';
 import DynamicAttribute from '@/components/DynamicAttribute.vue';
@@ -61,192 +62,108 @@ To create an Archive posts list add the following attribute on a *Collection Lis
 <CopyElement title="Archive Posts List">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"5427d75b-39e1-bdf8-8664-730b5506cbb9","tag":"div","classes":[],"children":["5427d75b-39e1-bdf8-8664-730b5506cbba","5427d75b-39e1-bdf8-8664-730b5506cbbc"],"type":"DynamoWrapper","data":{"tag":"div","dyn":{"type":"wrapper"},"xattr":[{"name":"blog","value":"archive-posts"}]}},{"_id":"5427d75b-39e1-bdf8-8664-730b5506cbba","tag":"div","classes":["14d49487-0ce8-a2d8-964c-c771d9d7ee41"],"children":["5427d75b-39e1-bdf8-8664-730b5506cbbb"],"type":"DynamoList","data":{"tag":"div","dyn":{"type":"list"}}},{"_id":"5427d75b-39e1-bdf8-8664-730b5506cbbb","tag":"div","classes":[],"children":[],"type":"DynamoItem","data":{"dyn":{"type":"item","grid":12}}},{"_id":"5427d75b-39e1-bdf8-8664-730b5506cbbc","tag":"div","classes":[],"children":["5427d75b-39e1-bdf8-8664-730b5506cbbd"],"type":"DynamoEmpty","data":{"tag":"div","dyn":{"type":"empty"}}},{"_id":"5427d75b-39e1-bdf8-8664-730b5506cbbd","tag":"div","classes":[],"children":["5427d75b-39e1-bdf8-8664-730b5506cbbe"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"5427d75b-39e1-bdf8-8664-730b5506cbbe","text":true,"v":"No items found."}],"styles":[{"_id":"14d49487-0ce8-a2d8-964c-c771d9d7ee41","fake":false,"type":"class","name":"Collection List","namespace":"","comb":"","styleLess":"display: grid; grid-auto-columns: 1fr; grid-column-gap: 16px; grid-row-gap: 16px; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":1}}</CopyElement>
 
 
-Inside Collection List item you can add all of the following elements to stylize your post, if you want, you can just copy a sample card and paste it inside a Collection List Item
+Inside Collection List Item you can add all of the elements that you find in the page:
+<div align="center">
+<g-link class="ml-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors active--exact active no-underline" to="/wordpress/blog/collection-item-elements/">Collection Item Elements</g-link>
+</div>
+
+if you want, you can just copy a sample card and paste it inside the Collection List Item
 
 <CopyElement title="Simple Post Card">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d26","tag":"div","classes":[],"children":["db124cae-60e5-6798-df76-59fa61ba6448","872187da-1fef-82a1-d8aa-5d3fd3bb5d29","872187da-1fef-82a1-d8aa-5d3fd3bb5d2b"],"type":"Block","data":{"tag":"div","style":{"base":{"tiny":{"noPseudo":{"gridColumnStart":"span 1","gridColumnEnd":"span 1"}}}}}},{"_id":"db124cae-60e5-6798-df76-59fa61ba6448","tag":"a","classes":["16529dba-daa7-b209-4b49-d50818f6a394"],"children":["872187da-1fef-82a1-d8aa-5d3fd3bb5d28"],"type":"Link","data":{"block":"inline","link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d28","tag":"img","classes":["db912598-80db-237e-1156-3d29aaf71b2e"],"children":[],"type":"Image","data":{"attr":{"src":"https://uploads-ssl.webflow.com/5db1c76aadcfe25e881680fa/5db86dc421496616bf357c25_placeholder.svg"},"xattr":[{"name":"item","value":"featured-image"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d29","tag":"h3","classes":[],"children":["872187da-1fef-82a1-d8aa-5d3fd3bb5d2a"],"type":"Heading","data":{"tag":"h3","xattr":[{"name":"item","value":"title"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d2a","text":true,"v":"Card one"},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d2b","tag":"p","classes":[],"children":["872187da-1fef-82a1-d8aa-5d3fd3bb5d2c"],"type":"Paragraph","data":{"xattr":[{"name":"item","value":"excerpt"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d2c","text":true,"v":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "}],"styles":[{"_id":"16529dba-daa7-b209-4b49-d50818f6a394","fake":false,"type":"class","name":"Link Block","namespace":"","comb":"","styleLess":"display: block;","variants":{},"children":[],"selector":null},{"_id":"db912598-80db-237e-1156-3d29aaf71b2e","fake":false,"type":"class","name":"Cards Image","namespace":"","comb":"","styleLess":"position: static; left: 0%; top: 0%; right: 0%; bottom: 0%; display: block; width: 100%; height: 300px; max-width: none; object-fit: cover; object-position: 50% 50%;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
-### Collection Item Elements
 
-These are all the elements that you can add inside the collection item of the previous Collection List Wrapper.
+## Masonry Posts
+
+Masonry posts is a way to connect several collection lists to a single query, in this case we can connect more than 1 collection list to the main query, that is the Archive query. Using several collection lists, allows you to style different posts of the same query with a different layout.
+
+Create a div and add the attribute:
+
+<Attribute name="blog" value="masonry-posts" />
+
+Inside this div add any collection list wrapper you want (minimum 2), and on every collection list wrapper add the attribute:
+
+<DynamicAttribute name="limit" value="number of posts in the collection" />
+
+<CopyElement title="Masonry Posts">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f8d5deaf-4d4e-85a3-d309-7476141c4b0b","tag":"div","classes":["5278e8c0-a2ae-2f1c-e122-8edb0c382ff3"],"children":["0eac665f-ccde-2e4b-9fbc-b8ebfdab4824","e321d0d8-c70e-66b7-a2bf-1b99eee2cf82"],"type":"Block","data":{"tag":"div","xattr":[{"name":"blog","value":"masonry-posts"}]}},{"_id":"0eac665f-ccde-2e4b-9fbc-b8ebfdab4824","tag":"div","classes":[],"children":["0eac665f-ccde-2e4b-9fbc-b8ebfdab4825","0eac665f-ccde-2e4b-9fbc-b8ebfdab4827"],"type":"DynamoWrapper","data":{"tag":"div","dyn":{"type":"wrapper","collection":null},"xattr":[{"name":"limit","value":"1"}]}},{"_id":"0eac665f-ccde-2e4b-9fbc-b8ebfdab4825","tag":"div","classes":[],"children":["0eac665f-ccde-2e4b-9fbc-b8ebfdab4826"],"type":"DynamoList","data":{"tag":"div","dyn":{"type":"list"}}},{"_id":"0eac665f-ccde-2e4b-9fbc-b8ebfdab4826","tag":"div","classes":[],"children":[],"type":"DynamoItem","data":{"dyn":{"type":"item","grid":12}}},{"_id":"0eac665f-ccde-2e4b-9fbc-b8ebfdab4827","tag":"div","classes":[],"children":["0eac665f-ccde-2e4b-9fbc-b8ebfdab4828"],"type":"DynamoEmpty","data":{"tag":"div","dyn":{"type":"empty"}}},{"_id":"0eac665f-ccde-2e4b-9fbc-b8ebfdab4828","tag":"div","classes":[],"children":["0eac665f-ccde-2e4b-9fbc-b8ebfdab4829"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"0eac665f-ccde-2e4b-9fbc-b8ebfdab4829","text":true,"v":"No items found."},{"_id":"e321d0d8-c70e-66b7-a2bf-1b99eee2cf82","tag":"div","classes":[],"children":["e321d0d8-c70e-66b7-a2bf-1b99eee2cf83","e321d0d8-c70e-66b7-a2bf-1b99eee2cf85"],"type":"DynamoWrapper","data":{"tag":"div","dyn":{"type":"wrapper","collection":null},"xattr":[{"name":"limit","value":"4"}]}},{"_id":"e321d0d8-c70e-66b7-a2bf-1b99eee2cf83","tag":"div","classes":["ef909f73-8187-9e95-40ee-aef868cfe3f2"],"children":["e321d0d8-c70e-66b7-a2bf-1b99eee2cf84"],"type":"DynamoList","data":{"tag":"div","dyn":{"type":"list"}}},{"_id":"e321d0d8-c70e-66b7-a2bf-1b99eee2cf84","tag":"div","classes":[],"children":[],"type":"DynamoItem","data":{"dyn":{"type":"item","grid":12}}},{"_id":"e321d0d8-c70e-66b7-a2bf-1b99eee2cf85","tag":"div","classes":[],"children":["e321d0d8-c70e-66b7-a2bf-1b99eee2cf86"],"type":"DynamoEmpty","data":{"tag":"div","dyn":{"type":"empty"}}},{"_id":"e321d0d8-c70e-66b7-a2bf-1b99eee2cf86","tag":"div","classes":[],"children":["e321d0d8-c70e-66b7-a2bf-1b99eee2cf87"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"e321d0d8-c70e-66b7-a2bf-1b99eee2cf87","text":true,"v":"No items found."}],"styles":[{"_id":"5278e8c0-a2ae-2f1c-e122-8edb0c382ff3","fake":false,"type":"class","name":"masonry posts","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null},{"_id":"ef909f73-8187-9e95-40ee-aef868cfe3f2","fake":false,"type":"class","name":"Collection List 2","namespace":"","comb":"","styleLess":"display: grid; grid-auto-columns: 1fr; grid-column-gap: 16px; grid-row-gap: 16px; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":2,"paginationRemovedCount":2}}</CopyElement>
+
+Inside Collection List Item you can add all of the elements that you find in the page:
+<div align="center">
+<g-link class="ml-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors active--exact active no-underline" to="/wordpress/blog/collection-item-elements/">Collection Item Elements</g-link>
+</div>
+
+if you want, you can just copy a sample card and paste it inside the Collection List Item
+
+<CopyElement title="Simple Post Card">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d26","tag":"div","classes":[],"children":["db124cae-60e5-6798-df76-59fa61ba6448","872187da-1fef-82a1-d8aa-5d3fd3bb5d29","872187da-1fef-82a1-d8aa-5d3fd3bb5d2b"],"type":"Block","data":{"tag":"div","style":{"base":{"tiny":{"noPseudo":{"gridColumnStart":"span 1","gridColumnEnd":"span 1"}}}}}},{"_id":"db124cae-60e5-6798-df76-59fa61ba6448","tag":"a","classes":["16529dba-daa7-b209-4b49-d50818f6a394"],"children":["872187da-1fef-82a1-d8aa-5d3fd3bb5d28"],"type":"Link","data":{"block":"inline","link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d28","tag":"img","classes":["db912598-80db-237e-1156-3d29aaf71b2e"],"children":[],"type":"Image","data":{"attr":{"src":"https://uploads-ssl.webflow.com/5db1c76aadcfe25e881680fa/5db86dc421496616bf357c25_placeholder.svg"},"xattr":[{"name":"item","value":"featured-image"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d29","tag":"h3","classes":[],"children":["872187da-1fef-82a1-d8aa-5d3fd3bb5d2a"],"type":"Heading","data":{"tag":"h3","xattr":[{"name":"item","value":"title"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d2a","text":true,"v":"Card one"},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d2b","tag":"p","classes":[],"children":["872187da-1fef-82a1-d8aa-5d3fd3bb5d2c"],"type":"Paragraph","data":{"xattr":[{"name":"item","value":"excerpt"}]}},{"_id":"872187da-1fef-82a1-d8aa-5d3fd3bb5d2c","text":true,"v":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "}],"styles":[{"_id":"16529dba-daa7-b209-4b49-d50818f6a394","fake":false,"type":"class","name":"Link Block","namespace":"","comb":"","styleLess":"display: block;","variants":{},"children":[],"selector":null},{"_id":"db912598-80db-237e-1156-3d29aaf71b2e","fake":false,"type":"class","name":"Cards Image","namespace":"","comb":"","styleLess":"position: static; left: 0%; top: 0%; right: 0%; bottom: 0%; display: block; width: 100%; height: 300px; max-width: none; object-fit: cover; object-position: 50% 50%;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+
+## Breadcrumbs
+
+Breadcrumbs is a navigational aid that allows visitors to understand their current location in the context of your archive page. To create them, you have to use a list with the attribute:
+
+<Attribute name="blog" value="breadcrumbs" />
+
+This list must have 3 item list inside that will have the following behaviour:
+
+1. It must be a link and is the link to the parent category / tag;
+
+2. Can be anything you want and it will be used as a separator;
+
+3. It must be a text and it is the name of current category / tag;
+
+<CopyElement title="Breadcrumbs">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"fce70f01-4f60-387f-ae55-6f47c9643b94","tag":"ul","classes":["16ff3455-fcbd-878e-41db-40e67e430caf"],"children":["fce70f01-4f60-387f-ae55-6f47c9643b95","fce70f01-4f60-387f-ae55-6f47c9643b96","fce70f01-4f60-387f-ae55-6f47c9643b97"],"type":"List","data":{"tag":"ul","list":{"type":"list","unstyled":true},"xattr":[{"name":"blog","value":"breadcrumbs"}]}},{"_id":"fce70f01-4f60-387f-ae55-6f47c9643b95","tag":"li","classes":[],"children":["f83f4aeb-876c-7a3e-7279-26103c4e4dee"],"type":"ListItem"},{"_id":"f83f4aeb-876c-7a3e-7279-26103c4e4dee","tag":"a","classes":[],"children":["f83f4aeb-876c-7a3e-7279-26103c4e4def"],"type":"Link","data":{"button":true,"link":{"mode":"external","url":"#"}}},{"_id":"f83f4aeb-876c-7a3e-7279-26103c4e4def","text":true,"v":"Parent category"},{"_id":"fce70f01-4f60-387f-ae55-6f47c9643b96","tag":"li","classes":[],"children":["bbaa937d-dcea-1a93-c30a-7116582415e1"],"type":"ListItem"},{"_id":"bbaa937d-dcea-1a93-c30a-7116582415e1","tag":"div","classes":[],"children":["bbaa937d-dcea-1a93-c30a-7116582415e2"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"bbaa937d-dcea-1a93-c30a-7116582415e2","text":true,"v":"/"},{"_id":"fce70f01-4f60-387f-ae55-6f47c9643b97","tag":"li","classes":[],"children":["64867c4e-fc73-bb18-5073-dd30fc9ac427"],"type":"ListItem"},{"_id":"64867c4e-fc73-bb18-5073-dd30fc9ac427","tag":"div","classes":[],"children":["7e7f2801-829c-0878-2d24-2f37c9f1fa34"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"7e7f2801-829c-0878-2d24-2f37c9f1fa34","text":true,"v":" Current category"}],"styles":[{"_id":"16ff3455-fcbd-878e-41db-40e67e430caf","fake":false,"type":"class","name":"Breadcrumbs","namespace":"","comb":"","styleLess":"display: flex;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+## Archive Categories and Tags
+
+Archive Categories and Tags is a list of the categories and tags of the current archive. You can decide from Udesly > Settings > Blog > Categories, you have the option to decide what you want to show as categories:
+
+1. All Categories, this means all the categories of the blog;
+2. Only Childrens, this means all the sub categories of the current category. (In the main archive it will show all the categories);
+3. Only Direct Childrens, this means all the direct sub categories of the current category. (In the main archive it will show all the first level categories).
+
+
+To create Categories List add a Collection List Wrapper with the attribute:
+
+<Attribute name="blog" value="categories" />
+
+<CopyElement title="Blog Categories">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354b","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b3911354c","9b22c53c-80dd-57ad-365e-7e5b3911354e"],"type":"DynamoWrapper","data":{"tag":"div","dyn":{"type":"wrapper"},"xattr":[{"name":"blog","value":"categories"}]}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354c","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b3911354d"],"type":"DynamoList","data":{"tag":"div","dyn":{"type":"list"}}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354d","tag":"div","classes":[],"children":[],"type":"DynamoItem","data":{"dyn":{"type":"item","grid":12}}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354e","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b3911354f"],"type":"DynamoEmpty","data":{"tag":"div","dyn":{"type":"empty"}}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354f","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b39113550"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b39113550","text":true,"v":"No items found."}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":1}}</CopyElement>
+
+To create instead a Tags List add a Collection List Wrapper with the attribute:
+
+<Attribute name="blog" value="tags" />
+
+<CopyElement title="Blog Tags">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354b","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b3911354c","9b22c53c-80dd-57ad-365e-7e5b3911354e"],"type":"DynamoWrapper","data":{"tag":"div","dyn":{"type":"wrapper"},"xattr":[{"name":"blog","value":"tags"}]}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354c","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b3911354d"],"type":"DynamoList","data":{"tag":"div","dyn":{"type":"list"}}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354d","tag":"div","classes":[],"children":[],"type":"DynamoItem","data":{"dyn":{"type":"item","grid":12}}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354e","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b3911354f"],"type":"DynamoEmpty","data":{"tag":"div","dyn":{"type":"empty"}}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b3911354f","tag":"div","classes":[],"children":["9b22c53c-80dd-57ad-365e-7e5b39113550"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"9b22c53c-80dd-57ad-365e-7e5b39113550","text":true,"v":"No items found."}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":1}}</CopyElement>
+
+Inside the Collection List Item you can add the following elements:
 
 #### Title
 
-The Title of the post can be added either to text elements or to link elements, if you use the latter it will also automatically link to the post page.
-
-Add the attribute:
+Is the title of the category or tag, you can add it to texts or links, using the attribute:
 
 <Attribute name="item" value="title" />
 
-<CopyElement title="Title">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"c6b4f067-3af4-1330-4c25-9bce97ffa6d2","tag":"h3","classes":["59d95faf-ed7c-aa9e-a200-fc9ed1c49f21"],"children":["1b709ebe-fcec-5b0d-b42a-65daac3fc479"],"type":"Heading","data":{"tag":"h3"}},{"_id":"1b709ebe-fcec-5b0d-b42a-65daac3fc479","text":true,"v":"Post Title"}],"styles":[{"_id":"59d95faf-ed7c-aa9e-a200-fc9ed1c49f21","fake":false,"type":"class","name":"Post Title","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-#### Featured Image
-
-The featured Image is the main image attached to a post, you can use the featured image on Images or any element as Background Image (don't forget to add a placeholder image and stylize it, the archive image will follow that image style). If you add the attribute to a link, it will also directly link to the post page.
-
-To create a futured image just use the attribute
-
-<Attribute name="item" value="featured-image" />
-
-<CopyElement title="Featured Image">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"c5189161-bbea-6043-8252-2345d0b3022f","tag":"img","classes":["db912598-80db-237e-1156-3d29aaf71b2e"],"children":[],"type":"Image","data":{"attr":{"src":"https://uploads-ssl.webflow.com/5db1c76aadcfe25e881680fa/5db86dc421496616bf357c25_placeholder.svg"},"xattr":[{"name":"item","value":"featured-image"}]}}],"styles":[{"_id":"db912598-80db-237e-1156-3d29aaf71b2e","fake":false,"type":"class","name":"Cards Image","namespace":"","comb":"","styleLess":"position: static; left: 0%; top: 0%; right: 0%; bottom: 0%; display: block; width: 100%; height: 300px; max-width: none; object-fit: cover; object-position: 50% 50%;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+<CopyElement title="Title">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"e0943b96-87ba-1539-1bce-1939d0846f2f","tag":"h3","classes":[],"children":["e0943b96-87ba-1539-1bce-1939d0846f30"],"type":"Heading","data":{"tag":"h3","xattr":[{"name":"item","value":"title"}]}},{"_id":"e0943b96-87ba-1539-1bce-1939d0846f30","text":true,"v":"Title"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
 #### Permalink
 
-The permalink is simply the url to the current post page. Just add the attribute on a link element of any type:
+This is the link to the category or tag, you can add it to links, using the attribute:
 
 <Attribute name="item" value="permalink" />
 
-<CopyElement title="Read More Button">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"3a362a89-7ae7-7629-1797-e2d0c9271dec","tag":"a","classes":[],"children":["3a362a89-7ae7-7629-1797-e2d0c9271ded"],"type":"Link","data":{"button":true,"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}},{"_id":"3a362a89-7ae7-7629-1797-e2d0c9271ded","text":true,"v":"Read More"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+<CopyElement title="Permalink">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"cb6fd907-bf87-44c1-705d-6fc567d8f3d1","tag":"a","classes":[],"children":[],"type":"Link","data":{"block":"inline","link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
-#### Excerpt
 
-The excerpt of the post (just as a reminder, the excerpt is a short summary of a post), can be added on any text element just adding the attribute:
+#### Description
 
-<Attribute name="item" value="excerpt" />
+Is the description of the category/tag and can be added in WordPress following the path: Posts > Categories or Posts > Tags. You can add it to texts, using the attribute:
 
-You can further customize the excerpts following the path: Udesly > Settings > Blog > Excerpt, where you can set the number of words and the last word. However, keep in mind that for every posts you can also set a manual excerpt. You can find an excerpt meta box for every post in WordPress, and if it's not visible just click on "Screen Options" on the top screen and check excerpt.
+<Attribute name="item" value="description" />
 
+<CopyElement title="Description">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"8c729172-9ca1-21bb-ff6a-1c8216c08fbe","tag":"p","classes":[],"children":["8c729172-9ca1-21bb-ff6a-1c8216c08fbf"],"type":"Paragraph","data":{"xattr":[{"name":"item","value":"description"}]}},{"_id":"8c729172-9ca1-21bb-ff6a-1c8216c08fbf","text":true,"v":"description"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
-<CopyElement title="Excerpt">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"de50c074-b6db-509a-b710-17e5dd3f7c86","tag":"p","classes":[],"children":["de50c074-b6db-509a-b710-17e5dd3f7c87"],"type":"Paragraph","data":{"xattr":[{"name":"item","value":"excerpt"}]}},{"_id":"de50c074-b6db-509a-b710-17e5dd3f7c87","text":true,"v":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+#### Featured Image
 
-#### Date & Time
+The featured image can be added to images or divs as background and can be added in WordPress following the path: Posts > Categories or Posts > Tags. You have just to use the attribute:
 
-To add an indicator about the date or the time of pubblication of the post, you can add respectively the following attributes:
+<Attribute name="item" value="featured-image" />
 
-<Attribute name="item" value="date" />
-
-
-<CopyElement title="Date">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"05ae6817-12f5-5cbd-27a5-757285f4653c","tag":"div","classes":["d2698781-6fbe-1a1f-c561-4501b8ec90fa"],"children":["05ae6817-12f5-5cbd-27a5-757285f4653d"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"date"}]}},{"_id":"05ae6817-12f5-5cbd-27a5-757285f4653d","text":true,"v":"24 05 2020"}],"styles":[{"_id":"d2698781-6fbe-1a1f-c561-4501b8ec90fa","fake":false,"type":"class","name":"Date","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
----
-
-<Attribute name="item" value="time" />
-
-<CopyElement title="Time">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"1afa500a-3a40-a6c2-4c44-9bdac57329ea","tag":"div","classes":["521f6863-124c-770a-28d3-fdd1c58bf1de"],"children":["1afa500a-3a40-a6c2-4c44-9bdac57329eb"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"time"}]}},{"_id":"1afa500a-3a40-a6c2-4c44-9bdac57329eb","text":true,"v":"12:05"}],"styles":[{"_id":"521f6863-124c-770a-28d3-fdd1c58bf1de","fake":false,"type":"class","name":"Time","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-The date and time format can be changed globally from WordPress Settings > General, respectively in sections named *Date format* and *Time Format*. However if you need to change the format locally for your current design needs you can add the optional attribute:
-
-<DynamicAttribute name="format" value="date/time format" />
-
-For the date/time format, WordPress uses the native PHP function, this the [complete format table](https://www.php.net/manual/en/function.date.php).
-
-As Example if you set the attribute:
-
-<Attribute name="format" value="F j, Y, g:i a" />
-
-The date will be in the format: *March 10, 2020, 5:16 pm*
-
-#### Main Category
-
-Thanks to the Udesly plugin, you can select a Main Category attached to each post, you can create with these feature a simple *tag* button that links to the main category of the post, just add on a link the following attribute:
-
-<Attribute name="item" value="main-category" />
-
-Don't forget to set up the main category in each post, it's not automatic.
-
-<CopyElement title="Main Category">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"2f499506-050a-ec28-85aa-c217ab8dae01","tag":"a","classes":[],"children":["2f499506-050a-ec28-85aa-c217ab8dae02"],"type":"Link","data":{"button":true,"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"main-category"}]}},{"_id":"2f499506-050a-ec28-85aa-c217ab8dae02","text":true,"v":"Main Category"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-#### Categories
-
-This is the list of categories of the post add it on a link element, this element will be repeated once for every category that is attached to the post. To use it use the attribute:
-
-<Attribute name="item" value="categories" />
-
-Optionally you can also add the following attribute to limit the number of categories to show:
-
-<DynamicAttribute name="limit" value="number of categories" />
-
-For example to show only first 3 categories add:
-
-<Attribute name="limit" value="3" />
-
-<CopyElement title="Post Categories">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"0520c69d-33a7-eb90-7817-ab11b0df047a","tag":"a","classes":[],"children":["0520c69d-33a7-eb90-7817-ab11b0df047b"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"categories"}]}},{"_id":"0520c69d-33a7-eb90-7817-ab11b0df047b","text":true,"v":"Category Link"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-#### Tags
-
-This is the list of tags of the post add it on a link element, this element will be repeated once for every category that is attached to the post. To use it use the attribute:
-
-<Attribute name="item" value="tags" />
-
-Optionally you can also add the following attribute to limit the number of categories to show:
-
-<DynamicAttribute name="limit" value="number of tags" />
-
-For example to show only first 3 tags add:
-
-<Attribute name="limit" value="3" />
-
-<CopyElement title="Post Tags">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"0520c69d-33a7-eb90-7817-ab11b0df047a","tag":"a","classes":[],"children":["0520c69d-33a7-eb90-7817-ab11b0df047b"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"tags"}]}},{"_id":"0520c69d-33a7-eb90-7817-ab11b0df047b","text":true,"v":"Tag Link"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-#### Author
-
-Every post has one Author attached to it, an author has a lot of data that can be customized, let's see it in action! You will find the elements dived on the element they can be used on: *Images*, *Texts* and *Links*.
-
-##### Author Images
-
-Actually the only Author data that can be used on images is the author Avatar, WordPress uses a system called Gravatar for its avatars, your authors can change the profile image creating an account on Gravatar using the same email. To show it, use an image or a div for background image with the attribute:
-
-* Avatar
-
-<Attribute name="item" value="avatar" />
-
-<CopyElement title="Avatar">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"68542af0-35a3-cc2d-538b-6d7efe7b1490","tag":"img","classes":["c89459eb-0ec0-7faa-2818-9558933ee0e9"],"children":[],"type":"Image","data":{"attr":{"src":"https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"},"img":{"id":"plugins/Basic/assets/placeholder.svg"},"xattr":[{"name":"item","value":"avatar"}]}}],"styles":[{"_id":"c89459eb-0ec0-7faa-2818-9558933ee0e9","fake":false,"type":"class","name":"Avatar","namespace":"","comb":"","styleLess":"display: block; width: 50px; height: 50px; border-top-left-radius: 100%; border-top-right-radius: 100%; border-bottom-left-radius: 100%; border-bottom-right-radius: 100%; object-fit: cover;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-##### Author Texts
-
-There are a lot of datas that can be used on text elements, they are pretty autoexplicative, just add the attributes you want to use on text elements:
-
-* Display Name 
-<Attribute name="item" value="author-display-name" />
-<CopyElement title="Display Name">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"664b771d-8aac-c12b-e1d8-af4c08809f77","tag":"div","classes":[],"children":["dcc7edaa-5e1c-1eee-611e-9424f223fdb4"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"author-display-name"}]}},{"_id":"dcc7edaa-5e1c-1eee-611e-9424f223fdb4","text":true,"v":"Author display name"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Nickname 
-<Attribute name="item" value="author-nickname" />
-<CopyElement title="Nickame">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"664b771d-8aac-c12b-e1d8-af4c08809f77","tag":"div","classes":[],"children":["dcc7edaa-5e1c-1eee-611e-9424f223fdb4"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"author-nickname"}]}},{"_id":"dcc7edaa-5e1c-1eee-611e-9424f223fdb4","text":true,"v":"Author nickname"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* First Name 
-<Attribute name="item" value="author-first-name" />
-<CopyElement title="First Name">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"664b771d-8aac-c12b-e1d8-af4c08809f77","tag":"div","classes":[],"children":["dcc7edaa-5e1c-1eee-611e-9424f223fdb4"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"author-first-name"}]}},{"_id":"dcc7edaa-5e1c-1eee-611e-9424f223fdb4","text":true,"v":"First Name"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Last Name 
-<Attribute name="item" value="author-last-name" />
-<CopyElement title="Last Name">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"664b771d-8aac-c12b-e1d8-af4c08809f77","tag":"div","classes":[],"children":["dcc7edaa-5e1c-1eee-611e-9424f223fdb4"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"author-last-name"}]}},{"_id":"dcc7edaa-5e1c-1eee-611e-9424f223fdb4","text":true,"v":"Last Name"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Description
-<Attribute name="item" value="author-description" />
-<CopyElement title="Author Description">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"664b771d-8aac-c12b-e1d8-af4c08809f77","tag":"div","classes":[],"children":["dcc7edaa-5e1c-1eee-611e-9424f223fdb4"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"author-description"}]}},{"_id":"dcc7edaa-5e1c-1eee-611e-9424f223fdb4","text":true,"v":"Author Description"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-##### Author Links
-
-With Links instead we can use the link to the author page (that is the archive page with all the posts written by the author) and his social links. You can add social links in WordPress under the Users panel
-
-* Email
-<Attribute name="item" value="author-email" />
-<CopyElement title="Author Email Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-email"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Email"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Facebook
-<Attribute name="item" value="author-facebook" />
-<CopyElement title="Author Facebook Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-facebook"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Facebook"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Linkedin
-<Attribute name="item" value="author-linkedin" />
-<CopyElement title="Author Linkedin Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-linkedin"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Linkedin"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Youtube
-<Attribute name="item" value="author-youtube" />
-<CopyElement title="Author Facebook Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-youtube"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Youtube"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Twitter
-<Attribute name="item" value="author-twitter" />
-<CopyElement title="Author Twitter Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-twitter"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Twitter"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Dribble
-<Attribute name="item" value="author-dribble" />
-<CopyElement title="Author dribble Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-dribble"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Dribble"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Instagram
-<Attribute name="item" value="author-instagram" />
-<CopyElement title="Author instagram Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-instagram"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Instagram"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
-
-* Phone Number
-<Attribute name="item" value="author-phone" />
-<CopyElement title="Author phone Link">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db2","tag":"a","classes":[],"children":["f83c17f1-8955-9d03-ea68-b99798e27db3"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"author-phone"}]}},{"_id":"f83c17f1-8955-9d03-ea68-b99798e27db3","text":true,"v":"Phone"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+<CopyElement title="Featured Image">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"cc263732-21cc-c8c4-07e1-e8c1b0b4e95d","tag":"img","classes":[],"children":[],"type":"Image","data":{"attr":{"src":"https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"},"img":{"id":"plugins/Basic/assets/placeholder.svg"},"xattr":[{"name":"item","value":"featured-image"}]}}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>

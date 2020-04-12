@@ -17,6 +17,7 @@ module.exports.sidebar = {
         items: [
            '/wordpress/blog/pages/',
            '/wordpress/blog/archive-elements/',
+           '/wordpress/blog/collection-item-elements/',
         ]
       },
       {
