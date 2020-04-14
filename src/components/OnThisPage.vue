@@ -62,7 +62,7 @@ export default {
       }
 
       // Clear the current observer.
-      this.observer.disconnect();
+      this.observer && this.observer.disconnect();
 
       // And create another one for the next page.
       this.$nextTick(this.initObserver);

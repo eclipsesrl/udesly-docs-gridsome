@@ -1,5 +1,4 @@
 import { Notyf } from 'notyf';
-import 'notyf/notyf.min.css'; 
 
 const Notification = {
 
@@ -7,10 +6,11 @@ const Notification = {
         const notyf = new Notyf({
             duration: 2000,
         });
+    
         Vue.successNotification = (text) => {
             notyf.success(text);
         }
-        Vue.errorNotification = (text) => {
+        Vue.errorNotification = (text) => { 
             notyf.error(text);
         }
     }
