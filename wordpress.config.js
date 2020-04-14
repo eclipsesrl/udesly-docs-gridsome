@@ -24,6 +24,16 @@ module.exports.sidebar = {
         ]
       },
       {
+        title: 'WooCoommerce',
+        items: [
+           '/wordpress/woocommerce/pages/',
+           '/wordpress/woocommerce/archive-elements/',
+           '/wordpress/woocommerce/collection-item-elements/',
+           '/wordpress/woocommerce/single-product-elements/',
+           '/wordpress/woocommerce/misc-elements/',
+        ]
+      },
+      {
         title: 'FAQs',
         items: [
            '/wordpress/faqs/general/',

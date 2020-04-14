@@ -18,6 +18,7 @@ export default {
           type: String,
           default: 'Element'
       },
+      from: String,
       success: String
   },
   methods: {
@@ -25,8 +26,9 @@ export default {
       document.execCommand('copy');
     },
     handleCopy(e) {
-      const data = this.$slots.default[0].text.trim();
-      console.log(data);
+      const target = this.from ? document.getElementById(this.from).__vue__ : this;
+      const data = target.$slots.default[0].text.trim();
+    
       try {
         e.clipboardData.setData('application/json', data);
         e.preventDefault();
