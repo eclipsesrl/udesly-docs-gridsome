@@ -14,9 +14,6 @@ module.exports = {
   },
   siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://example.com',
   settings: {
-    web: 'https://www.udesly.com',
-    twitter: process.env.URL_TWITTER || false,
-    github: process.env.URL_GITHUB || false,
     githubRepoBase: 'https://github.com/eclipsesrl/udesly-docs-gridsome/blob/master/content/',
     nav: {
       links: [

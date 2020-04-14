@@ -10,7 +10,7 @@ import CopyElement from '@/components/CopyElement.vue';
 
 # Archive Page Elements
 
-These elements below can be used in all Archive pages regarding blog, so also in Category, Specific Category, Tag, Specific Tag, Author Page, Specific Author
+These elements below can be used in all Archive pages regarding blog, so also in *Category, Specific Category, Tag, Specific Tag, Author Page, Specific Author*. [How to set pages here](/wordpress/blog/pages/).
 
 
 ## Archive Title
