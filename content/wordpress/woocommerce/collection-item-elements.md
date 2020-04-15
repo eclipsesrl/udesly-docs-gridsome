@@ -57,7 +57,7 @@ The permalink is simply the url to the current product page. Just add the attrib
 
 #### Short Description
 
-The excerpt of the product (just as a reminder, the excerpt is a short summary of a product), can be added on any text element just adding the attribute:
+The short description of the product (just as a reminder, the short description is a short summary of a product, can be added on any text element just adding the attribute:
 
 <Attribute name="item" value="short-description" />
 
@@ -82,6 +82,53 @@ If the product is on sale, the regular price is the full price, you can add it t
 <Attribute name="item" value="regular-price" />
 
 <CopyElement title="Regular Price">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"a7dbac84-ed3b-8825-9264-3a82d2dd4c80","tag":"div","classes":["ce0b86fb-860b-9515-9b4c-f0318a2f57a4"],"children":["a7dbac84-ed3b-8825-9264-3a82d2dd4c81"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"regular price"}]}},{"_id":"a7dbac84-ed3b-8825-9264-3a82d2dd4c81","text":true,"v":"99$"}],"styles":[{"_id":"ce0b86fb-860b-9515-9b4c-f0318a2f57a4","fake":false,"type":"class","name":"Regular Price","namespace":"","comb":"","styleLess":"text-decoration: line-through;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+#### Variations
+
+This is just a visual helper to make your client understand that the product has variations that can be selected inside the single page. To create this add a div with attribute:
+
+<Attribute name="item" value="variations" />
+
+Inside this div add another div, this one will be the placeholder for the variation value, and will be populated with a background image (if you set images in WordPress following the path: Products > Attributes) or a text.
+
+This structure is pretty dynamic, as an example if you have a product with 2 variation properties like: Color and Size, with respective values of (Red, Blue) and (M, L, XL)
+
+the Div where you have the attribute will get duplicated 2 times once for Color and once for Size, while the div inside the one with the attribute will get duplicated 2 times for Color and 3 times for Size, creating a structure that should be like:
+
+<div align="center">
+    <g-image src="~/assets/images/variations.png"/>
+</div>
+
+so keep it in mind when you create the design, use flex or grid thinking about this structure.
+
+<CopyElement title="Variations">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"b2b471be-f1ea-cfaa-c785-6b6478369e9a","tag":"div","classes":["076c26e8-502b-444a-7182-c2df76ff6bc8"],"children":["e88ff0a5-1e92-7be4-03f9-6cc06ff171a0"],"type":"Block","data":{"tag":"div","xattr":[{"name":"item","value":"variations"}]}},{"_id":"e88ff0a5-1e92-7be4-03f9-6cc06ff171a0","tag":"div","classes":["5646cede-5c39-8aa3-51f4-c9379aca555c"],"children":["5ec761bb-fc71-789e-49a5-2a081bc28d87"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"5ec761bb-fc71-789e-49a5-2a081bc28d87","text":true,"v":"Red"}],"styles":[{"_id":"076c26e8-502b-444a-7182-c2df76ff6bc8","fake":false,"type":"class","name":"Variations","namespace":"","comb":"","styleLess":"display: flex; margin-bottom: 10px; flex-wrap: wrap;","variants":{},"children":[],"selector":null},{"_id":"5646cede-5c39-8aa3-51f4-c9379aca555c","fake":false,"type":"class","name":"Variation Value","namespace":"","comb":"","styleLess":"margin-right: 5px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; background-image: @img_example_bg; background-position: 0px 0px; background-size: cover;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+
+#### Rating
+
+Rating is an integer number that goes from 0 to 5. You can use the attribute: 
+
+<Attribute name="item" value="rating" /> 
+
+on any element you want, it will be repeated automatically based on the rating. (e.g if you put this attribute on a star image, and you have a rating of 4 for that product you will get 4 star images ⭐⭐⭐⭐)
+
+<CopyElement name="Rating">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"9347fea9-8a6c-b60f-d145-436ebda13825","tag":"img","classes":[],"children":[],"type":"Image","data":{"attr":{"src":"https://uploads-ssl.webflow.com/5e8ef2fc1014dc82f241a968/5e8ef2fd9112fdaa5efd28d2_star.main.svg","width":50},"xattr":[{"name":"item","value":"rating"}],"img":{"id":"5e8ef2fd9112fdaa5efd28d2"}}}],"styles":[],"assets":[{"cdnUrl":"https://uploads-ssl.webflow.com/5e8ef2fc1014dc82f241a968/5e8ef2fd9112fdaa5efd28d2_star.main.svg","siteId":"5e8ef2fc1014dc82f241a968","width":150,"isHD":false,"height":150,"fileName":"5e8ef2fd9112fdaa5efd28d2_star.main.svg","createdOn":"2019-07-11T14:03:04.219Z","origFileName":"star.main.svg","fileHash":"a40a63128a6a88d0a270049c10384432","variants":[],"mimeType":"image/svg+xml","s3Url":"https://s3.amazonaws.com/webflow-prod-assets/5e8ef2fc1014dc82f241a968/5e8ef2fd9112fdaa5efd28d2_star.main.svg","thumbUrl":"https://uploads-ssl.webflow.com/5e8ef2fc1014dc82f241a968/5e8ef2fd9112fdaa5efd28d2_star.main.svg","_id":"5e8ef2fd9112fdaa5efd28d2","updatedOn":"2020-04-09T10:03:44.270Z","fileSize":1034}],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+#### Total Sales
+
+Is the number of sales made for that product, you can use it on text elements using the attribute:
+
+<Attribute name="item" value="total-sales" />
+
+<CopyElement title="Reviews Count">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"21c5102a-564a-556f-3cb2-326545649d4f","tag":"div","classes":[],"children":["21c5102a-564a-556f-3cb2-326545649d50"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"total-sales"}]}},{"_id":"21c5102a-564a-556f-3cb2-326545649d50","text":true,"v":"2154"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+#### Reviews Count
+
+Is the number of reviews made for that product, you can use it on text elements using the attribute: 
+
+<Attribute name="item" value="review-count" />
+
+<CopyElement title="Reviews Count">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"21c5102a-564a-556f-3cb2-326545649d4f","tag":"div","classes":[],"children":["21c5102a-564a-556f-3cb2-326545649d50"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"review-count"}]}},{"_id":"21c5102a-564a-556f-3cb2-326545649d50","text":true,"v":"2154"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
 #### Featured
 

@@ -118,3 +118,10 @@ export default {
   }
 };
 </script>
+<style scoped>
+ul {
+  max-height: 60vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style>
