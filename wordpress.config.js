@@ -30,7 +30,18 @@ module.exports.sidebar = {
            '/wordpress/woocommerce/archive-elements/',
            '/wordpress/woocommerce/collection-item-elements/',
            '/wordpress/woocommerce/single-product-elements/',
+           '/wordpress/woocommerce/cart-page/',
+           '/wordpress/woocommerce/my-account-page/',
+           '/wordpress/woocommerce/checkout-page/',
+           '/wordpress/woocommerce/order-confirmation-page/',
+           '/wordpress/woocommerce/search-results/',
            '/wordpress/woocommerce/misc-elements/',
+        ]
+      },
+      {
+        title: "ACF",
+        items: [
+          '/wordpress/acf/overview/'
         ]
       },
       {

@@ -2,16 +2,16 @@
 description: ''
 sidebar: 'wordpress'
 prev: '/wordpress/woocommerce/collection-item-elements/'
-next: '/wordpress/woocommerce/misc-elements/'
+next: '/wordpress/woocommerce/cart-page/'
 ---
 
 import Attribute from '@/components/Attribute.vue';
 import DynamicAttribute from '@/components/DynamicAttribute.vue';
 import CopyElement from '@/components/CopyElement.vue';
 
-# Single Product Elements
+# Single Product Page Elements
 
-These are all the elements that you can add inside the collection item of a WooCommerce Collection List Wrapper.
+These are all the elements that you can add inside a *Single Product Page*, a *Template for a Single Product Page* or a *Specific Product Page*. [How to set pages here](/wordpress/woocommerce/pages/#single-product-page).
 
 #### Title
 

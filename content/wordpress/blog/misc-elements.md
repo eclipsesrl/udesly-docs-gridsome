@@ -115,7 +115,7 @@ Inside the div you can add all of the elements that you find in the page:
 <g-link class="ml-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors active--exact active no-underline" to="/wordpress/blog/collection-item-elements/">Collection Item Elements</g-link>
 </div>
 
-if you want, you can just copy a sample card and paste it inside the Collection List Item
+if you want, you can just copy a sample card and paste it inside the Div
 
 <CopyElement title="Simple Post Card" from="simple-post-card"></CopyElement>
 

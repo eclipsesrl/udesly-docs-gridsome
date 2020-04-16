@@ -271,3 +271,66 @@ On Links instead you can add the attribute:
 <Attribute name="item" value="permalink" />
 
 <CopyElement title="Next and Prev Posts">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"0db83c0f-1ae6-af6f-440e-0f82a713ae73","tag":"div","classes":["38e4f140-3c95-341b-d5ae-00dca98023d5"],"children":["3a2931c7-c251-c694-0f0c-17790ea17398","04d63fce-c3cd-932d-83cb-df5bbc39b273"],"type":"Block","data":{"tag":"div"}},{"_id":"3a2931c7-c251-c694-0f0c-17790ea17398","tag":"div","classes":["a1ab489c-b6f1-b2bc-89f2-60a7e4a2b6e3"],"children":["cdcf4d49-0f83-72fa-0951-c4cd174a766d"],"type":"Block","data":{"tag":"div","style":{"base":{"main":{"noPseudo":{"gridColumnEnd":2,"gridColumnStart":1,"gridRowEnd":2,"gridRowStart":1,"alignSelf":"center","justifySelf":"center"}}}},"xattr":[{"name":"item","value":"prev-post"}]}},{"_id":"cdcf4d49-0f83-72fa-0951-c4cd174a766d","tag":"a","classes":[],"children":["3985bdd9-e1ce-9baa-025e-3708f5c98320"],"type":"Link","data":{"block":"inline","link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}},{"_id":"3985bdd9-e1ce-9baa-025e-3708f5c98320","tag":"h4","classes":[],"children":["3985bdd9-e1ce-9baa-025e-3708f5c98321"],"type":"Heading","data":{"tag":"h4","xattr":[{"name":"item","value":"title"}]}},{"_id":"3985bdd9-e1ce-9baa-025e-3708f5c98321","text":true,"v":"Prev Post Title"},{"_id":"04d63fce-c3cd-932d-83cb-df5bbc39b273","tag":"div","classes":["6a48bba1-deb5-5baa-926d-edf2052aaef9"],"children":["f4abb3fd-461a-c2a4-1c13-0cf79266b1b9"],"type":"Block","data":{"tag":"div","style":{"base":{"main":{"noPseudo":{"gridColumnEnd":3,"gridColumnStart":2,"gridRowEnd":2,"gridRowStart":1,"alignSelf":"center","justifySelf":"center"}}}},"xattr":[{"name":"item","value":"next-post"}]}},{"_id":"f4abb3fd-461a-c2a4-1c13-0cf79266b1b9","tag":"a","classes":[],"children":["f4abb3fd-461a-c2a4-1c13-0cf79266b1ba"],"type":"Link","data":{"block":"inline","link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}},{"_id":"f4abb3fd-461a-c2a4-1c13-0cf79266b1ba","tag":"h4","classes":[],"children":["f4abb3fd-461a-c2a4-1c13-0cf79266b1bb"],"type":"Heading","data":{"tag":"h4","xattr":[{"name":"item","value":"title"}]}},{"_id":"f4abb3fd-461a-c2a4-1c13-0cf79266b1bb","text":true,"v":"Next Post Title"}],"styles":[{"_id":"38e4f140-3c95-341b-d5ae-00dca98023d5","fake":false,"type":"class","name":"Adjacent Posts","namespace":"","comb":"","styleLess":"display: grid; justify-content: center; align-content: center; grid-auto-columns: 1fr; grid-column-gap: 16px; grid-row-gap: 16px; grid-template-columns: 1fr 1fr; grid-template-rows: auto;","variants":{},"children":[],"selector":null},{"_id":"a1ab489c-b6f1-b2bc-89f2-60a7e4a2b6e3","fake":false,"type":"class","name":"Previous Post","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null},{"_id":"6a48bba1-deb5-5baa-926d-edf2052aaef9","fake":false,"type":"class","name":"Next Post","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+#### Comments
+
+The comments structure is pretty complex so read carefully all the steps:
+
+1. Create a div and add the attribute:
+
+<Attribute name="blog" value="comments" />
+
+2. Add a Form with at least 1 input type text, 1 textarea, a label and a submit button, this will be the form used to to create a new comment.
+
+3. Add an Unordered List, this list will be nested automatically so be sure to add a little padding on the left to allow a better cascading.
+
+4. Inside the first list item you can add the following elements to customize your comment:
+
+* Author
+
+This is the name of the author of the comment and can be added on texts using the attribute:
+
+<Attribute name="item" value="author" />
+
+* Author Email
+
+This is the email of the author of the comment can be added on texts or links using the attribute:
+
+<Attribute name="item" value="author-email" />
+
+* Text
+
+This is the value of the comment can be added on texts using the attribute:
+
+<Attribute name="item" value="text" />
+
+* Reply Link
+
+It's the link that will allow you to reply to a comment, add on a link the attribute:
+
+<Attribute name="item" value="reply-link" />
+
+* Date
+
+This is the date of the comment can be added on texts using the attribute:
+
+<Attribute name="item" value="date" />
+
+* Avatar
+
+It's the avatar of the author of the comment, can be added on a div or an image using the attribute: 
+
+<Attribute name="item" value="avatar" />
+
+Note that the avatar can be set only using Gravatar
+
+
+5. Add pagination links using respectively:
+
+<Attribute name="item" value="previous-comments" />
+
+and
+
+<Attribute name="item" value="next-comments" />
+
+<CopyElement title="Blog Comments">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"0e34e0fd-6c09-49f6-d716-9e6af78553eb","tag":"div","classes":["4eaff450-2e43-327c-c58f-f1621912249e"],"children":["1c49e767-7864-933a-4ad4-70660f3f3061","7cc4f369-65a9-f5f2-30d8-766634f6a250"],"type":"Block","data":{"tag":"div","xattr":[{"name":"blog","value":"comments"}]}},{"_id":"1c49e767-7864-933a-4ad4-70660f3f3061","tag":"ul","classes":["2bddff17-8d49-0c5a-04f9-4770d4c48d4e"],"children":["1c49e767-7864-933a-4ad4-70660f3f3062"],"type":"List","data":{"tag":"ul","list":{"type":"list","unstyled":true}}},{"_id":"1c49e767-7864-933a-4ad4-70660f3f3062","tag":"li","classes":["650f10e0-4217-03ad-3d5d-7e5d9728e745"],"children":["0ef0d32e-ad25-f90e-6506-661a072667da","4fb4d076-6b03-4e98-ac9c-46f89a6a484d"],"type":"ListItem"},{"_id":"0ef0d32e-ad25-f90e-6506-661a072667da","tag":"div","classes":["d9d9a6a6-efe5-973a-9920-d17d47e9f962"],"children":[],"type":"Block","data":{"tag":"div","xattr":[{"name":"item","value":"avatar"}]}},{"_id":"4fb4d076-6b03-4e98-ac9c-46f89a6a484d","tag":"div","classes":["20794392-2ab1-33cf-9a29-a30d4d400eea"],"children":["c526e879-09ac-408f-5f7f-a98a25c69e1f","65847810-21ad-99d6-66bc-909f3e676089","c503e58a-b23a-b4d7-b7c5-f7180d0b5e51"],"type":"Block","data":{"tag":"div"}},{"_id":"c526e879-09ac-408f-5f7f-a98a25c69e1f","tag":"h5","classes":[],"children":["c526e879-09ac-408f-5f7f-a98a25c69e20"],"type":"Heading","data":{"tag":"h5","xattr":[{"name":"item","value":"author"}]}},{"_id":"c526e879-09ac-408f-5f7f-a98a25c69e20","text":true,"v":"Heading"},{"_id":"65847810-21ad-99d6-66bc-909f3e676089","tag":"p","classes":[],"children":["65847810-21ad-99d6-66bc-909f3e67608a"],"type":"Paragraph","data":{"xattr":[{"name":"item","value":"text"}]}},{"_id":"65847810-21ad-99d6-66bc-909f3e67608a","text":true,"v":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."},{"_id":"c503e58a-b23a-b4d7-b7c5-f7180d0b5e51","tag":"a","classes":[],"children":["c503e58a-b23a-b4d7-b7c5-f7180d0b5e52"],"type":"Link","data":{"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"reply-link"}]}},{"_id":"c503e58a-b23a-b4d7-b7c5-f7180d0b5e52","text":true,"v":"Reply"},{"_id":"7cc4f369-65a9-f5f2-30d8-766634f6a250","tag":"div","classes":["07aeae4e-5f30-3953-386c-9533532ad18e"],"children":["7e49d5f6-15dc-45c9-9ff0-8b483f806ebe","d0abfb1e-b11d-d509-74d0-1144c10a4069","d01689eb-6319-006b-bfb8-1e1d35968a53"],"type":"Block","data":{"tag":"div"}},{"_id":"7e49d5f6-15dc-45c9-9ff0-8b483f806ebe","tag":"a","classes":[],"children":["7e49d5f6-15dc-45c9-9ff0-8b483f806ebf"],"type":"Link","data":{"button":true,"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"previous-comments"}]}},{"_id":"7e49d5f6-15dc-45c9-9ff0-8b483f806ebf","text":true,"v":"Previous Page"},{"_id":"d0abfb1e-b11d-d509-74d0-1144c10a4069","tag":"a","classes":[],"children":["d0abfb1e-b11d-d509-74d0-1144c10a406a"],"type":"Link","data":{"button":true,"link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"next-comments"}]}},{"_id":"d0abfb1e-b11d-d509-74d0-1144c10a406a","text":true,"v":"Next Page"},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a53","tag":"div","classes":[],"children":["d01689eb-6319-006b-bfb8-1e1d35968a54","d01689eb-6319-006b-bfb8-1e1d35968a5c","d01689eb-6319-006b-bfb8-1e1d35968a5f"],"type":"FormWrapper","data":{"form":{"type":"wrapper"}}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a54","tag":"form","classes":[],"children":["d01689eb-6319-006b-bfb8-1e1d35968a55","d01689eb-6319-006b-bfb8-1e1d35968a57","0bb55b88-beca-7dd1-86db-644a42fb857f","d01689eb-6319-006b-bfb8-1e1d35968a5b"],"type":"FormForm","data":{"attr":{"id":"email-form","name":"email-form","data-name":"Email Form"},"form":{"type":"form","name":"Email Form"}}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a55","tag":"label","classes":[],"children":["d01689eb-6319-006b-bfb8-1e1d35968a56"],"type":"FormBlockLabel","data":{"form":{"type":"label"},"attr":{"for":"name"}}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a56","text":true,"v":"Name"},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a57","tag":"input","classes":[],"children":[],"type":"FormTextInput","data":{"attr":{"autofocus":false,"maxlength":256,"name":"name","data-name":"Name","placeholder":"","type":"text","id":"name","disabled":false,"required":false},"form":{"type":"input","name":"Name"}}},{"_id":"0bb55b88-beca-7dd1-86db-644a42fb857f","tag":"textarea","classes":[],"children":[],"type":"FormTextarea","data":{"attr":{"placeholder":"Example Text","maxlength":5000,"id":"field","name":"field"},"form":{"type":"textarea","name":"Field"}}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a5b","tag":"input","classes":[],"children":[],"type":"FormButton","data":{"attr":{"type":"submit","value":"Submit","data-wait":"Please wait..."},"form":{"type":"button","wait":"Please wait..."}}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a5c","tag":"div","classes":[],"children":["d01689eb-6319-006b-bfb8-1e1d35968a5d"],"type":"FormSuccessMessage","data":{"form":{"type":"msg-done"}}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a5d","tag":"div","classes":[],"children":["d01689eb-6319-006b-bfb8-1e1d35968a5e"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a5e","text":true,"v":"Thank you! Your submission has been received!"},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a5f","tag":"div","classes":[],"children":["d01689eb-6319-006b-bfb8-1e1d35968a60"],"type":"FormErrorMessage","data":{"form":{"type":"msg-fail"}}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a60","tag":"div","classes":[],"children":["d01689eb-6319-006b-bfb8-1e1d35968a61"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"d01689eb-6319-006b-bfb8-1e1d35968a61","text":true,"v":"Oops! Something went wrong while submitting the form."}],"styles":[{"_id":"4eaff450-2e43-327c-c58f-f1621912249e","fake":false,"type":"class","name":"Comments","namespace":"","comb":"","styleLess":"padding-right: 60px; padding-left: 20px;","variants":{},"children":[],"selector":null},{"_id":"2bddff17-8d49-0c5a-04f9-4770d4c48d4e","fake":false,"type":"class","name":"List","namespace":"","comb":"","styleLess":"margin-left: 0px; padding-left: 40px;","variants":{},"children":[],"selector":null},{"_id":"650f10e0-4217-03ad-3d5d-7e5d9728e745","fake":false,"type":"class","name":"Comment","namespace":"","comb":"","styleLess":"display: flex;","variants":{},"children":[],"selector":null},{"_id":"d9d9a6a6-efe5-973a-9920-d17d47e9f962","fake":false,"type":"class","name":"avatar","namespace":"","comb":"","styleLess":"width: 50px; height: 50px; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; background-image: @img_example_bg; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;","variants":{},"children":[],"selector":null},{"_id":"20794392-2ab1-33cf-9a29-a30d4d400eea","fake":false,"type":"class","name":"Div Block 2","namespace":"","comb":"","styleLess":"padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;","variants":{},"children":[],"selector":null},{"_id":"07aeae4e-5f30-3953-386c-9533532ad18e","fake":false,"type":"class","name":"Div Block 3","namespace":"","comb":"","styleLess":"padding-left: 40px;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
