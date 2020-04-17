@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'wordpress'
 prev: '/wordpress/acf/overview/'
-next: '/wordpress/acf/items/'
+next: '/wordpress/acf/tips/'
 ---
 import Attribute from '@/components/Attribute.vue';
 import DynamicAttribute from '@/components/DynamicAttribute.vue';

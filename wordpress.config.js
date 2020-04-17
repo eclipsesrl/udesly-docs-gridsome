@@ -24,6 +24,13 @@ module.exports.sidebar = {
         ]
       },
       {
+        title: "Pages",
+        items: [
+          '/wordpress/pages/overview/',
+          '/wordpress/pages/page-item-elements/'
+        ]
+      },
+      {
         title: 'WooCoommerce',
         items: [
            '/wordpress/woocommerce/pages/',
@@ -41,7 +48,16 @@ module.exports.sidebar = {
       {
         title: "ACF",
         items: [
-          '/wordpress/acf/overview/'
+          '/wordpress/acf/overview/',
+          '/wordpress/acf/items/',
+          '/wordpress/acf/tips/'
+        ]
+      },
+      {
+        title: "Search",
+        items: [
+          '/wordpress/search/pages/',
+          '/wordpress/search/search-page-elements/'
         ]
       },
       {

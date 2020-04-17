@@ -145,8 +145,13 @@ html[lights-out] {
   pre[class*='language-'],
   code[class*='language-'] {
     @apply bg-ui-border;
+    
   }
 }
+
+code[class*='language-'] {
+    background-color: transparent;
+  }
 
 #nprogress .bar {
   background: #8351ff !important;
