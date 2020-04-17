@@ -46,6 +46,16 @@ module.exports.sidebar = {
         ]
       },
       {
+        title: 'Custom Post Types',
+        items: [
+           '/wordpress/custom-post-types/pages/',
+           '/wordpress/custom-post-types/archive-elements/',
+           '/wordpress/custom-post-types/collection-item-elements/',
+           '/wordpress/custom-post-types/single-page-elements/',
+           '/wordpress/custom-post-types/misc-elements/',
+        ]
+      },
+      {
         title: "ACF",
         items: [
           '/wordpress/acf/overview/',
