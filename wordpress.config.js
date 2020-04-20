@@ -56,6 +56,13 @@ module.exports.sidebar = {
         ]
       },
       {
+        title: 'General',
+        items: [
+          '/wordpress/general/menu/',
+          '/wordpress/general/sidebar/'
+        ]
+      },
+      {
         title: "ACF",
         items: [
           '/wordpress/acf/overview/',
@@ -68,6 +75,15 @@ module.exports.sidebar = {
         items: [
           '/wordpress/search/pages/',
           '/wordpress/search/search-page-elements/'
+        ]
+      },
+      {
+        title: 'Plugin',
+        items: [
+          '/wordpress/plugin/setup/',
+          '/wordpress/plugin/data/',
+          '/wordpress/plugin/posts-queries/',
+          '/wordpress/plugin/terms-queries/',
         ]
       },
       {
