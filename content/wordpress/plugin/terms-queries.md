@@ -2,6 +2,7 @@
 description: ''
 sidebar: 'wordpress'
 prev: '/wordpress/plugin/posts-queries/'
+next: '/wordpress/plugin/custom-post-types/'
 ---
 
 # Terms Queries

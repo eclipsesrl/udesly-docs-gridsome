@@ -84,6 +84,9 @@ module.exports.sidebar = {
           '/wordpress/plugin/data/',
           '/wordpress/plugin/posts-queries/',
           '/wordpress/plugin/terms-queries/',
+          '/wordpress/plugin/custom-post-types/',
+          '/wordpress/plugin/rules/',
+          '/wordpress/plugin/hooks/',
         ]
       },
       {
