@@ -8,12 +8,19 @@
         <p>All you need, to use Webflow, with your favourite CMS!</p>
       
         <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
-          
+          <g-link
+            to="/shopify/"
+            class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-6 text-center"
+          >
+          <ShopifyLogo />
+           <h4>Shopify</h4>
+          </g-link>
           <g-link
             to="/wordpress/"
-            class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-8"
+            class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-6 text-center"
           >
-           <img width="140" src="/assets/images/wordpress-logo.svg" />
+          <WordPressLogo />
+          <h4>WordPress</h4>
           </g-link>
           
         </div>
@@ -26,6 +33,8 @@
 <script>
 import Logo from '@/components/Logo';
 import { ArrowRightCircleIcon, ZapIcon, CodeIcon, MoonIcon, SearchIcon } from 'vue-feather-icons';
+import WordPressLogo from '@/components/WordPressLogo';
+import ShopifyLogo from '@/components/ShopifyLogo'
 
 export default {
   components: {
@@ -34,7 +43,9 @@ export default {
     ZapIcon,
     CodeIcon,
     MoonIcon,
-    SearchIcon
+    SearchIcon,
+    WordPressLogo,
+    ShopifyLogo
   },
 
   metaInfo() {

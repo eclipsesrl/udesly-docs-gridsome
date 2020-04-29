@@ -4,7 +4,9 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const wordpress = require('./wordpress.config')
+const wordpress = require('./wordpress.config');
+
+const shopify = require('./shopify.config');
 
 module.exports = {
   siteName: 'Udesly Adapter Docs',
@@ -18,6 +20,11 @@ module.exports = {
     nav: {
       links: [
         {
+          path: '/shopify/',
+          title: 'WordPress',
+          logo: 'ShopifyLogo'
+        },
+        {
           path: '/wordpress/',
           title: 'WordPress',
           logo: 'WordPressLogo',
@@ -25,7 +32,8 @@ module.exports = {
       ],
     },
     sidebar: [
-      wordpress.sidebar
+      wordpress.sidebar,
+      shopify.sidebar
     ],
   },
   plugins: [

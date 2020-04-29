@@ -69,6 +69,7 @@ import ToggleDarkMode from "@/components/ToggleDarkMode";
 import Logo from '@/components/Logo';
 import { SunIcon, MoonIcon, GlobeIcon, GithubIcon, TwitterIcon } from "vue-feather-icons";
 import WordPressLogo from '@/components/WordPressLogo';
+import ShopifyLogo from '@/components/ShopifyLogo';
 import GhostLogo from '@/components/GhostLogo';
 
 const Search = () => import(/* webpackChunkName: "search" */ "@/components/Search").catch(error => console.warn(error));
@@ -83,7 +84,8 @@ export default {
     GithubIcon,
     TwitterIcon,
     WordPressLogo,
-    GhostLogo
+    GhostLogo,
+    ShopifyLogo
   },
 
   computed: {
