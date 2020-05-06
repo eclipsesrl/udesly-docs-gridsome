@@ -12,20 +12,9 @@
       <main
         class="container relative flex flex-wrap justify-start flex-1 w-full bg-ui-background"
       >
-        <aside
-          v-if="hasSidebar"
-          class="sidebar"
-          :class="{ open: sidebarOpen }"
-          :style="sidebarStyle"
-        >
-          <div class="w-full pb-16 bg-ui-background">
-            <Sidebar @navigate="sidebarOpen = false" />
-          </div>
-        </aside>
-
         <div
           class="w-full pb-24"
-          :class="{ 'pl-0 lg:pl-12 lg:w-3/4': hasSidebar }"
+          :class="{ 'pl-0 lg:pl-12': hasSidebar }"
         >
           <slot />
         </div>
@@ -67,6 +56,12 @@ export default {
     LayoutHeader,
     MenuIcon,
     XIcon,
+  },
+  props: {
+    disable: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {

@@ -83,6 +83,14 @@ If the product is on sale, the regular price is the full price, you can add it t
 
 <CopyElement title="Regular Price">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"a7dbac84-ed3b-8825-9264-3a82d2dd4c80","tag":"div","classes":["ce0b86fb-860b-9515-9b4c-f0318a2f57a4"],"children":["a7dbac84-ed3b-8825-9264-3a82d2dd4c81"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"regular price"}]}},{"_id":"a7dbac84-ed3b-8825-9264-3a82d2dd4c81","text":true,"v":"99$"}],"styles":[{"_id":"ce0b86fb-860b-9515-9b4c-f0318a2f57a4","fake":false,"type":"class","name":"Regular Price","namespace":"","comb":"","styleLess":"text-decoration: line-through;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
+#### Formatted Price
+
+This element will use the default function of WooCommerce to display prices, (it will combine both price and sale price, and ranges for variable products) you can add it to text elements using the attribute:
+
+<Attribute name="item" value="formatted-price" />
+
+<CopyElement title="Formatted Price">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"a7dbac84-ed3b-8825-9264-3a82d2dd4c80","tag":"div","classes":["ce0b86fb-860b-9515-9b4c-f0318a2f57a4"],"children":["a7dbac84-ed3b-8825-9264-3a82d2dd4c81"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"formatted-price"}]}},{"_id":"a7dbac84-ed3b-8825-9264-3a82d2dd4c81","text":true,"v":"99$"}],"styles":[{"_id":"ce0b86fb-860b-9515-9b4c-f0318a2f57a4","fake":false,"type":"class","name":"Formatted Price","namespace":"","comb":"","styleLess":"text-decoration: line-through;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
 #### Variations
 
 This is just a visual helper to make your client understand that the product has variations that can be selected inside the single page. To create this add a div with attribute:

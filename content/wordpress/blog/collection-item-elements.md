@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'wordpress'
 prev: '/wordpress/blog/archive-elements/'
-next: '/wordpress/blog/collection-item-elements/'
+next: '/wordpress/blog/single-page-elements/'
 ---
 
 import Attribute from '@/components/Attribute.vue';

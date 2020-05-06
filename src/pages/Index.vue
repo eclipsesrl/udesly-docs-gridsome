@@ -13,14 +13,12 @@
             class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-6 text-center"
           >
           <ShopifyLogo />
-           <h4>Shopify</h4>
           </g-link>
           <g-link
             to="/wordpress/"
             class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-6 text-center"
           >
           <WordPressLogo />
-          <h4>WordPress</h4>
           </g-link>
           
         </div>

@@ -8,14 +8,18 @@ const wordpress = require('./wordpress.config');
 
 const shopify = require('./shopify.config');
 
+const {version} = require('./package.json');
+
 module.exports = {
   siteName: 'Udesly Adapter Docs',
+ 
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png',
   },
   siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://example.com',
   settings: {
+    version,
     githubRepoBase: 'https://github.com/eclipsesrl/udesly-docs-gridsome/blob/master/content/',
     nav: {
       links: [
@@ -43,6 +47,14 @@ module.exports = {
         typeName: 'MarkdownPage',
         baseDir: './content',
         template: './src/templates/MarkdownPage.vue',
+        plugins: ['@gridsome/remark-prismjs'],
+      },
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'ChangelogPage',
+        baseDir: './changelog',
         plugins: ['@gridsome/remark-prismjs'],
       },
     },

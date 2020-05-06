@@ -102,8 +102,9 @@ export default {
     const pathMeta = path ? ` | ${capitalize(path)}` : '';
 
     const title = this.$page.markdownPage.title + cmsMeta + pathMeta;
+
     const description =
-      this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
+      this.$page.markdownPage.description || this.$page.markdownPage.excerpt || this.$page.markdownPage.headings[0].value + " documentation " + cmsMeta;
 
     return {
       title: title,
