@@ -11,7 +11,8 @@
     "@gridsome/vue-remark": "^0.1.10",
     "gridsome": "^0.7.0",
     "notyf": "^3.6.0",
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "showdown": "^1.9.1"
   },
   "devDependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
