@@ -22,5 +22,15 @@ module.exports.sidebar = {
            '/shopify/blog/misc-elements/',
         ]
       },
+      {
+        title: 'Account',
+        items: [
+          '/shopify/account/',
+          '/shopify/account/account-page/',
+          '/shopify/account/login-page/',
+          '/shopify/account/activate-account-page/',
+          '/shopify/account/misc/'
+        ]
+      }
     ]
 }

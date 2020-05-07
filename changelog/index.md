@@ -16,6 +16,7 @@
 * Added more options for article lists (now from the Shopify backend you can also set order, and a tag filter);
 * Added specific article element;
 * Added currency selector element;
+* Fixed user total spent formatting;
 
 
 #### WordPress
