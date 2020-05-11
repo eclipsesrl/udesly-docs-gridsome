@@ -3,7 +3,7 @@
 
 # Changelog
 
-## 2.2.21 - (TBR)
+## 2.3.0 - (TBR)
 
 #### General
 * Improved error message for unrecognized pages
@@ -17,7 +17,18 @@
 * Added specific article element;
 * Added currency selector element;
 * Fixed user total spent formatting;
-
+* Order Confirmation page is now converted as Order Page;
+* Changed Order Cancel Reason to use Cancel Reason Label instead of Raw value;
+* Added Order Financial Status;
+* Added Order Fulfillment Status;
+* Added Order Note;
+* Added Order Transactions with Transactions Data;
+* Added optional elements (address and remove address) inside addresses list element;
+* Fixed invalid translation key for alternative templates;
+* Added mega-menu element to support 1 level of nested menus;
+* Sections can now be added on Article, Aside, Div, Footer, Header or Section and not only Divs;
+* Added support for blocks inside sections;
+* Added option border color for sections;
 
 #### WordPress
 * Added alt tag for featured images;
