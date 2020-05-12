@@ -23,6 +23,14 @@ module.exports.sidebar = {
       ],
     },
     {
+      title: "Shop",
+      items: [
+        "/shopify/shop/pages/",
+        "/shopify/shop/collections-list/",
+        "/shopify/shop/collection/",
+      ]
+    },
+    {
       title: "Account",
       items: [
         "/shopify/account/",
@@ -47,8 +55,16 @@ module.exports.sidebar = {
         "/shopify/general/menu/",
         "/shopify/general/social/",
         "/shopify/general/sections/",
+        "/shopify/general/conditionals/",
         "/shopify/general/liquid/"
       ],
     },
+    {
+      title: "Static Pages",
+      items: [
+        "/shopify/static-pages/pages/",
+        "/shopify/static-pages/elements/"
+      ]
+    }
   ],
 };

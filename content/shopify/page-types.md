@@ -195,7 +195,7 @@ This page can be defined using the following attribute on the Body element of yo
 
 ## Static Pages
 
-All the static page you create in Webflow will be converted as template page. Their are not automatically created in Shopify, you have to create manually them from Shopify Dashboard being sure to use the same handle (slug) you used in Webflow. And also don't forget to select the correct template:
+All the static page you create in Webflow will be converted as template page. They are not automatically created in Shopify, you have to create manually them from Shopify Dashboard being sure to use the same handle (slug) you used in Webflow. And also don't forget to select the correct template:
 
 <div align="center">
   <g-image src="~/assets/images/shopify-template-picker.jpg" />

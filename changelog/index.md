@@ -29,6 +29,7 @@
 * Sections can now be added on Article, Aside, Div, Footer, Header or Section and not only Divs;
 * Added support for blocks inside sections;
 * Added option border color for sections;
+* Added a different add to cart with dropdowns;
 
 #### WordPress
 * Added alt tag for featured images;
