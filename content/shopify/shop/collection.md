@@ -181,4 +181,11 @@ To enable pagination, just press on *paginate items* inside Webflow, but remembe
 <CopyElement title="Archive Products">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"4f9c8f79-c04f-e1b9-daf6-ed0967c31769","tag":"div","classes":[],"children":["4f9c8f79-c04f-e1b9-daf6-ed0967c3176a","4f9c8f79-c04f-e1b9-daf6-ed0967c3176c"],"type":"DynamoWrapper","data":{"tag":"div","dyn":{"type":"wrapper"},"xattr":[{"name":"shop","value":"archive-products"}]}},{"_id":"4f9c8f79-c04f-e1b9-daf6-ed0967c3176a","tag":"div","classes":[],"children":["4f9c8f79-c04f-e1b9-daf6-ed0967c3176b"],"type":"DynamoList","data":{"tag":"div","dyn":{"type":"list"}}},{"_id":"4f9c8f79-c04f-e1b9-daf6-ed0967c3176b","tag":"div","classes":[],"children":[],"type":"DynamoItem","data":{"dyn":{"type":"item","grid":12}}},{"_id":"4f9c8f79-c04f-e1b9-daf6-ed0967c3176c","tag":"div","classes":[],"children":["4f9c8f79-c04f-e1b9-daf6-ed0967c3176d"],"type":"DynamoEmpty","data":{"tag":"div","dyn":{"type":"empty"}}},{"_id":"4f9c8f79-c04f-e1b9-daf6-ed0967c3176d","tag":"div","classes":[],"children":["4f9c8f79-c04f-e1b9-daf6-ed0967c3176e"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"4f9c8f79-c04f-e1b9-daf6-ed0967c3176e","text":true,"v":"No items found."}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":1}}</CopyElement>
 
 
+Inside Collection List Item you can add all of the elements that you find in the page:
+<div align="center">
+<g-link class="ml-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors active--exact active no-underline" to="/shopify/shop/collection-item-elements/">Collection Item Elements</g-link>
+</div>
 
+if you want, you can just copy a sample card and paste it inside the Collection List Item
+
+<CopyElement title="Simple Product Card" from="simple-post-card"></CopyElement>

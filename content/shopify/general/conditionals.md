@@ -87,9 +87,17 @@ Show/Hide element if the cart is empty:
 
 #### Product
 
+##### Has Related Products
+
 Show/hide element if the current product (only works within single product page) has related products:
 
 <Attribute name="show-if" value="has-related-products" />
+
+##### Variable Price
+
+Show/hide element if the current product has a variable price:
+
+<Attribute name="show-if" value="variable-price" />
 
 #### Order
 

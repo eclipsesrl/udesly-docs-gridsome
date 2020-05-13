@@ -30,6 +30,8 @@
 * Added support for blocks inside sections;
 * Added option border color for sections;
 * Added a different add to cart with dropdowns;
+* Added optional limit for product tags and collections;
+* Added product variable price;
 
 #### WordPress
 * Added alt tag for featured images;

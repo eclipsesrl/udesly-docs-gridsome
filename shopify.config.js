@@ -28,6 +28,7 @@ module.exports.sidebar = {
         "/shopify/shop/pages/",
         "/shopify/shop/collections-list/",
         "/shopify/shop/collection/",
+        "/shopify/shop/collection-item-elements/"
       ]
     },
     {
