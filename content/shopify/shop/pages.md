@@ -2,6 +2,9 @@
 sidebar: "shopify"
 next: "/shopify/shop/collections-list/"
 ---
+import Attribute from '@/components/Attribute.vue';
+import DynamicAttribute from '@/components/DynamicAttribute.vue';
+import CopyElement from '@/components/CopyElement.vue';
 
 # Pages
 
