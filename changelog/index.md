@@ -3,7 +3,12 @@
 
 # Changelog
 
-## 2.3.0 - (TBR)
+## 2.3.1 - (TBR)
+
+#### Ghost
+* Fixed authors elements
+
+## 2.3.0 - May, 15 - 2020
 
 #### General
 * Improved error message for unrecognized pages

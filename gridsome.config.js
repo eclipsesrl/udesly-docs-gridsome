@@ -8,6 +8,8 @@ const wordpress = require('./wordpress.config');
 
 const shopify = require('./shopify.config');
 
+const ghost = require('./ghost.config');
+
 const {version} = require('./package.json');
 
 module.exports = {
@@ -32,12 +34,18 @@ module.exports = {
           path: '/wordpress/',
           title: 'WordPress',
           logo: 'WordPressLogo',
+        },
+        {
+          path: '/ghost/',
+          title: 'Ghost',
+          logo: 'GhostLogo'
         }
       ],
     },
     sidebar: [
       wordpress.sidebar,
-      shopify.sidebar
+      shopify.sidebar,
+      ghost.sidebar
     ],
   },
   plugins: [

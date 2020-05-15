@@ -20,7 +20,12 @@
           >
           <WordPressLogo />
           </g-link>
-          
+           <g-link
+            to="/ghost/"
+            class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-6 text-center"
+          >
+          <GhostLogo />
+          </g-link>
         </div>
       </div>
 
@@ -32,13 +37,15 @@
 import Logo from '@/components/Logo';
 import { ArrowRightCircleIcon, ZapIcon, CodeIcon, MoonIcon, SearchIcon } from 'vue-feather-icons';
 import WordPressLogo from '@/components/WordPressLogo';
-import ShopifyLogo from '@/components/ShopifyLogo'
+import ShopifyLogo from '@/components/ShopifyLogo';
+import GhostLogo from '@/components/GhostLogo';
 
 export default {
   components: {
     Logo,
     ArrowRightCircleIcon,
     ZapIcon,
+    GhostLogo,
     CodeIcon,
     MoonIcon,
     SearchIcon,

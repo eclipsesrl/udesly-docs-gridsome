@@ -1,0 +1,50 @@
+---
+description: ""
+sidebar: "ghost"
+next: "/ghost/members/subscriptions/"
+---
+import Attribute from '@/components/Attribute.vue';
+import DynamicAttribute from '@/components/DynamicAttribute.vue';
+import CopyElement from '@/components/CopyElement.vue';
+
+# Members
+
+Ghost makes it possible to launch a membership business, develop a direct relationship with your fans and generate revenue from your creative work.
+
+Managin members in ghost is really really simple.
+
+
+## Sign Up Form
+
+Insert a form block with only 1 input type email inside and a submit button and add the attribute:
+
+<Attribute name="members" value="signup" />
+
+<CopyElement title="Sign up form">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123778","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123779","140e5270-52e2-5af6-5f4b-fbf0fb123781","140e5270-52e2-5af6-5f4b-fbf0fb123784"],"type":"FormWrapper","data":{"form":{"type":"wrapper"},"xattr":[{"name":"members","value":"signup"}]}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123779","tag":"form","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb12377d","140e5270-52e2-5af6-5f4b-fbf0fb12377f","140e5270-52e2-5af6-5f4b-fbf0fb123780"],"type":"FormForm","data":{"attr":{"id":"email-form","name":"email-form","data-name":"Email Form"},"form":{"type":"form","name":"Email Form"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377d","tag":"label","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb12377e"],"type":"FormBlockLabel","data":{"form":{"type":"label"},"attr":{"for":"email"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377e","text":true,"v":"Email Address"},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377f","tag":"input","classes":[],"children":[],"type":"FormTextInput","data":{"attr":{"autofocus":false,"maxlength":256,"name":"email","data-name":"Email","placeholder":"Email","type":"email","id":"email","disabled":false,"required":true},"form":{"type":"input","name":"Email"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123780","tag":"input","classes":[],"children":[],"type":"FormButton","data":{"attr":{"type":"submit","value":"Submit","data-wait":"Please wait..."},"form":{"type":"button","wait":"Please wait..."}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123781","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123782"],"type":"FormSuccessMessage","data":{"form":{"type":"msg-done"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123782","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123783"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123783","text":true,"v":"Thank you! Your submission has been received!"},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123784","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123785"],"type":"FormErrorMessage","data":{"form":{"type":"msg-fail"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123785","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123786"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123786","text":true,"v":"Oops! Something went wrong while submitting the form."}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+## Sign In Form
+
+Insert a form block with only 1 input type email inside and a submit button and add the attribute:
+
+<Attribute name="members" value="signin" />
+
+<CopyElement title="Sign Up form">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123778","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123779","140e5270-52e2-5af6-5f4b-fbf0fb123781","140e5270-52e2-5af6-5f4b-fbf0fb123784"],"type":"FormWrapper","data":{"form":{"type":"wrapper"},"xattr":[{"name":"members","value":"signin"}]}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123779","tag":"form","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb12377d","140e5270-52e2-5af6-5f4b-fbf0fb12377f","140e5270-52e2-5af6-5f4b-fbf0fb123780"],"type":"FormForm","data":{"attr":{"id":"email-form","name":"email-form","data-name":"Email Form"},"form":{"type":"form","name":"Email Form"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377d","tag":"label","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb12377e"],"type":"FormBlockLabel","data":{"form":{"type":"label"},"attr":{"for":"email"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377e","text":true,"v":"Email Address"},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377f","tag":"input","classes":[],"children":[],"type":"FormTextInput","data":{"attr":{"autofocus":false,"maxlength":256,"name":"email","data-name":"Email","placeholder":"Email","type":"email","id":"email","disabled":false,"required":true},"form":{"type":"input","name":"Email"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123780","tag":"input","classes":[],"children":[],"type":"FormButton","data":{"attr":{"type":"submit","value":"Submit","data-wait":"Please wait..."},"form":{"type":"button","wait":"Please wait..."}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123781","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123782"],"type":"FormSuccessMessage","data":{"form":{"type":"msg-done"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123782","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123783"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123783","text":true,"v":"Thank you! Your submission has been received!"},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123784","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123785"],"type":"FormErrorMessage","data":{"form":{"type":"msg-fail"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123785","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123786"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123786","text":true,"v":"Oops! Something went wrong while submitting the form."}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+
+## Subscribe Form
+
+
+Insert a form block with only 1 input type email inside and a submit button and add the attribute:
+
+<Attribute name="members" value="signin" />
+
+<CopyElement title="Subscribe form">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123778","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123779","140e5270-52e2-5af6-5f4b-fbf0fb123781","140e5270-52e2-5af6-5f4b-fbf0fb123784"],"type":"FormWrapper","data":{"form":{"type":"wrapper"},"xattr":[{"name":"members","value":"subscribe"}]}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123779","tag":"form","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb12377d","140e5270-52e2-5af6-5f4b-fbf0fb12377f","140e5270-52e2-5af6-5f4b-fbf0fb123780"],"type":"FormForm","data":{"attr":{"id":"email-form","name":"email-form","data-name":"Email Form"},"form":{"type":"form","name":"Email Form"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377d","tag":"label","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb12377e"],"type":"FormBlockLabel","data":{"form":{"type":"label"},"attr":{"for":"email"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377e","text":true,"v":"Email Address"},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb12377f","tag":"input","classes":[],"children":[],"type":"FormTextInput","data":{"attr":{"autofocus":false,"maxlength":256,"name":"email","data-name":"Email","placeholder":"Email","type":"email","id":"email","disabled":false,"required":true},"form":{"type":"input","name":"Email"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123780","tag":"input","classes":[],"children":[],"type":"FormButton","data":{"attr":{"type":"submit","value":"Submit","data-wait":"Please wait..."},"form":{"type":"button","wait":"Please wait..."}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123781","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123782"],"type":"FormSuccessMessage","data":{"form":{"type":"msg-done"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123782","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123783"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123783","text":true,"v":"Thank you! Your submission has been received!"},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123784","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123785"],"type":"FormErrorMessage","data":{"form":{"type":"msg-fail"}}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123785","tag":"div","classes":[],"children":["140e5270-52e2-5af6-5f4b-fbf0fb123786"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"140e5270-52e2-5af6-5f4b-fbf0fb123786","text":true,"v":"Oops! Something went wrong while submitting the form."}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+
+## Sign Out button
+
+Insert a link and add the attribute:
+
+<Attribute name="members" value="sign-out" />
+
+<CopyElement title="Sign Out Button">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"ae1647b9-848a-39c3-60cd-9feee0aacbeb","tag":"a","classes":[],"children":["ae1647b9-848a-39c3-60cd-9feee0aacbec"],"type":"Link","data":{"button":true,"link":{"mode":"external","url":"#"},"xattr":[{"name":"members","value":"sign-out"}]}},{"_id":"ae1647b9-848a-39c3-60cd-9feee0aacbec","text":true,"v":"Sign Out"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
