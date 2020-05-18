@@ -59,7 +59,16 @@ module.exports.sidebar = {
         title: 'General',
         items: [
           '/wordpress/general/menu/',
-          '/wordpress/general/sidebar/'
+          '/wordpress/general/sidebar/',
+          '/wordpress/general/frontend-editor/',
+          '/wordpress/general/widget/',
+          '/wordpress/general/forms/',
+          '/wordpress/general/shortcodes/',
+          '/wordpress/general/terms-query/',
+          '/wordpress/general/conditionals/',
+          '/wordpress/general/social-links/',
+          '/wordpress/general/boxes/',
+          '/wordpress/general/php-elements/',
         ]
       },
       {
@@ -68,6 +77,16 @@ module.exports.sidebar = {
           '/wordpress/acf/overview/',
           '/wordpress/acf/items/',
           '/wordpress/acf/tips/'
+        ]
+      },
+      {
+        title: "Login Area",
+        items: [
+          '/wordpress/login-area/',
+          '/wordpress/login-area/login-form/',
+          '/wordpress/login-area/register-form/',
+          '/wordpress/login-area/logout/',
+          '/wordpress/login-area/reset-flow/'
         ]
       },
       {
@@ -87,6 +106,13 @@ module.exports.sidebar = {
           '/wordpress/plugin/custom-post-types/',
           '/wordpress/plugin/rules/',
           '/wordpress/plugin/hooks/',
+        ]
+      },
+      {
+        title: 'Multilingual',
+        items: [
+          '/wordpress/multilingual/translate-press/',
+          '/wordpress/multilingual/weglot/'
         ]
       },
       {

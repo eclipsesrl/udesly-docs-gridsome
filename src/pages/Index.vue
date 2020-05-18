@@ -26,6 +26,12 @@
           >
           <GhostLogo />
           </g-link>
+          <g-link
+            to="/netlify/"
+            class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-6 text-center"
+          >
+          <NetlifyLogo />
+          </g-link>
         </div>
       </div>
 
@@ -39,6 +45,7 @@ import { ArrowRightCircleIcon, ZapIcon, CodeIcon, MoonIcon, SearchIcon } from 'v
 import WordPressLogo from '@/components/WordPressLogo';
 import ShopifyLogo from '@/components/ShopifyLogo';
 import GhostLogo from '@/components/GhostLogo';
+import NetlifyLogo from '@/components/NetlifyLogo';
 
 export default {
   components: {
@@ -48,6 +55,7 @@ export default {
     GhostLogo,
     CodeIcon,
     MoonIcon,
+    NetlifyLogo,
     SearchIcon,
     WordPressLogo,
     ShopifyLogo

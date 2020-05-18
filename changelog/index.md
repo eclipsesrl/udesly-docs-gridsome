@@ -3,7 +3,10 @@
 
 # Changelog
 
-## 2.3.1 - (TBR)
+## 2.3.1 - May, 18 - 2020
+
+#### Netlify
+* Added a new error when csv files are wrongly named and corresponding to non-created templates.
 
 #### Ghost
 * Fixed authors elements

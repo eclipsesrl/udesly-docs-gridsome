@@ -12,6 +12,9 @@ import CopyElement from '@/components/CopyElement.vue';
 
 Checkout page is already created by Webflow when you add the Ecommerce, you don't need any attribute on body, the only thing that makes this page different from a normal page is that you have to declare the page you are using as checkout in WooCommerce settings, following the path: WooCommerce > Settings > Advanced > Checkout Page.
 
+<div align="center">
+  <g-image src="~/assets/images/wc-pages.png" />
+</div>
 
 You should already found a Checkout element preadded by Webflow in this page, just add the attribute:
 

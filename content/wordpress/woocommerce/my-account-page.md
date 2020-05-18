@@ -12,6 +12,10 @@ import CopyElement from '@/components/CopyElement.vue';
 
 My Account page is actually a normal Webflow page where you can add the My Account Elements, it has no attribute on body, the only thing that makes this page different from a normal page is that you have to declare the page you are using as My Account in WooCommerce settings, following the path: WooCommerce > Settings > Advanced > Account Page.
 
+<div align="center">
+  <g-image src="~/assets/images/wc-pages.png" />
+</div>
+
 To create it follow these steps:
 
 1. Add a div with attribute:

@@ -71,6 +71,7 @@ import { SunIcon, MoonIcon, GlobeIcon, GithubIcon, TwitterIcon } from "vue-feath
 import WordPressLogo from '@/components/WordPressLogo';
 import ShopifyLogo from '@/components/ShopifyLogo';
 import GhostLogo from '@/components/GhostLogo';
+import NetlifyLogo from '@/components/NetlifyLogo';
 
 const Search = () => import(/* webpackChunkName: "search" */ "@/components/Search").catch(error => console.warn(error));
 
@@ -84,6 +85,7 @@ export default {
     GithubIcon,
     TwitterIcon,
     WordPressLogo,
+    NetlifyLogo,
     GhostLogo,
     ShopifyLogo
   },

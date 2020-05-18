@@ -19,3 +19,7 @@ table tr, table thead {
 table td {
     border-right: 1px solid var(--color-ui-border);
 }
+
+iframe {
+    max-width: 100%;
+}

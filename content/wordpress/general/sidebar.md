@@ -2,6 +2,7 @@
 description: ''
 sidebar: 'wordpress'
 prev: '/wordpress/general/menu/'
+next: '/wordpress/general/frontend-editor/'
 ---
 import Attribute from '@/components/Attribute.vue';
 import DynamicAttribute from '@/components/DynamicAttribute.vue';

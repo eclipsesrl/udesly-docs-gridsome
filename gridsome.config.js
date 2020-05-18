@@ -10,6 +10,8 @@ const shopify = require('./shopify.config');
 
 const ghost = require('./ghost.config');
 
+const netlify = require('./netlify.config');
+
 const {version} = require('./package.json');
 
 module.exports = {
@@ -39,13 +41,19 @@ module.exports = {
           path: '/ghost/',
           title: 'Ghost',
           logo: 'GhostLogo'
+        },
+        {
+          path: '/netlify/',
+          title: 'NetlifyCMS',
+          logo: 'NetlifyLogo'
         }
       ],
     },
     sidebar: [
       wordpress.sidebar,
       shopify.sidebar,
-      ghost.sidebar
+      ghost.sidebar,
+      netlify.sidebar
     ],
   },
   plugins: [

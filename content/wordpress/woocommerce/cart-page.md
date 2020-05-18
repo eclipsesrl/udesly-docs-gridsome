@@ -12,6 +12,10 @@ import CopyElement from '@/components/CopyElement.vue';
 
 Cart page is actually a normal Webflow page where you can add the Cart Element, it has no attribute on body, the only thing that makes this page different from a normal page is that you have to declare the page you are using as cart in WooCommerce settings, following the path: WooCommerce > Settings > Advanced > Cart Page.
 
+<div align="center">
+  <g-image src="~/assets/images/wc-pages.png" />
+</div>
+
 The Cart Page can be divided in 3 elements: 2 are basically mandatory (Cart and Cart Totals), while cross sells are optional.
 
 ## Cart

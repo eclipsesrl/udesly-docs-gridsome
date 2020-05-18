@@ -69,6 +69,12 @@ module.exports.sidebar = {
         "/shopify/static-pages/pages/",
         "/shopify/static-pages/elements/"
       ]
+    },
+    {
+      title: 'Multilingual',
+      items: [
+        '/shopify/multilingual/weglot/'
+      ]
     }
   ],
 };
