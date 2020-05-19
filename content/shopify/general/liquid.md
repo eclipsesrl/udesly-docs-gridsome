@@ -2,6 +2,7 @@
 description: ''
 sidebar: 'shopify'
 prev: '/shopify/general/conditionals/'
+next: '/shopify/general/js-events/'
 ---
 
 import Attribute from '@/components/Attribute.vue';

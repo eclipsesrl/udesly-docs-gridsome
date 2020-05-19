@@ -36,6 +36,6 @@ This code is totally randomic, just be sure that this is unique per page.
 
 Background Images are not automatically editable from frontend editor. You have to add the following attribute:
 
-<DynamicAttribute name="backgrdoun-image" value="your unique code" />
+<DynamicAttribute name="background-image" value="your unique code" />
 
 This code is totally randomic, just be sure that this is unique per page.

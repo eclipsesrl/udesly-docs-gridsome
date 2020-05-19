@@ -60,7 +60,8 @@ module.exports.sidebar = {
         "/shopify/general/social/",
         "/shopify/general/sections/",
         "/shopify/general/conditionals/",
-        "/shopify/general/liquid/"
+        "/shopify/general/liquid/",
+        "/shopify/general/js-events/"
       ],
     },
     {
