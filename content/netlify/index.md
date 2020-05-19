@@ -8,7 +8,7 @@ next: '/netlify/requirements/'
 [Netlify](https://www.netlify.com/) is an All-in-one platform for automating modern web projects. With the Udesly Adapter you can deploy and manage your Webflow template, inclusive of its CMS, with Netlify.
 ​
 <div align="center">
-  <g-image src="~/assets/images/jamstack.svg" />
+  <g-image src="~/assets/images/jamstack.png" />
 </div>
 ​
 Netlify platform has a very generous free tier that will cover almost all websites for free. Netlify CMS is open source, and with Netlify Identity you can create basically 5 admin accounts for free.
