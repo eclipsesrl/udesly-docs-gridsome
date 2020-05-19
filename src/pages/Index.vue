@@ -195,14 +195,19 @@ footer {
   bottom: 12px;
 }
 
+div.converters {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .main-index a {
     max-width: 250px;
   }
+  div.converters {
+    width: auto;
+  }
 }
-div.converters {
-  width: 100%;
-}
+
 div.converters h5 {
   font-size: 13px;
 }

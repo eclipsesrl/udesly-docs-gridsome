@@ -199,4 +199,18 @@ span.cms {
   font-size: 10px;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 568px){
+  .result {
+    padding-top: 10px;
+    padding-bottom: 22px;
+    width: 100%;
+  }
+  span.cms {
+    bottom: 2px;
+    right: 50%;
+    font-size: 8px;
+    transform: translateX(50%);
+  }
+}
 </style>
