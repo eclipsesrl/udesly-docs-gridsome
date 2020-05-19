@@ -13,7 +13,7 @@ import CopyElement from '@/components/CopyElement.vue';
 
 > ⚠️ ADVANCED USERS ONLY ⚠️
 
-Liquid elements are advanced elements that can help you to achieve custom functionalities without modifying directly the exported theme. They can be used in all the theme and are meant for advanced users who knows how liquid templating works. To inject liquid code you have 2 ways:
+Liquid elements are advanced elements that can help you to achieve custom functionalities without modifying directly the exported theme. They can be used in all the theme and are meant for advanced users who knows how liquid templating works. To inject liquid code you have 2 ways: embeds and attributes.
 
 
 ## Embeds

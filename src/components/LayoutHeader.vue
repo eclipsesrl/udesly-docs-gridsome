@@ -18,7 +18,7 @@
               v-for="link in settings.nav.links"
               :key="link.path"
               :to="link.path"
-              class="block p-1 font-medium nav-link text-ui-typo hover:text-ui-primary"
+              class="block p-1 font-medium nav-link text-ui-typo hover:text-ui-primary logo-wrapper"
               :title="link.title"
              
             >
@@ -111,11 +111,7 @@ header {
       }
     }
   }
-  .active svg:not(.feather-search) {
-    path,g {
-          fill: var(--color-ui-primary)!important;
-      }
-  }
+  
  svg.feather-globe:hover{
     path {
       fill: unset!important;
@@ -123,9 +119,22 @@ header {
   }
 }
 
-.nav-link {
-  &.active {
-    @apply text-ui-primary font-bold border-ui-primary
-  }
+.nav-link.active {
+  path,g {
+          fill: var(--color-ui-primary)!important;
+      }
+}
+
+.logo-wrapper {
+  padding: 2px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--color-ui-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-wrapper.active {
+  background-color: var(--color-ui-nav-link-active);
 }
 </style>

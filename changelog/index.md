@@ -3,6 +3,11 @@
 
 # Changelog
 
+## 2.3.2 - May, 19 - 2020
+
+#### Shopify
+* Added optional parameter "form-modifier" for single product add to cart. [Read More](/shopify/shop/product-page-elements/#form-modifier)
+
 ## 2.3.1 - May, 18 - 2020
 
 #### Netlify

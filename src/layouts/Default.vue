@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans antialiased text-ui-typo bg-ui-background">
-    <div class="flex flex-col justify-start min-h-screen">
+    <div class="flex flex-col justify-start min-h-screen" style="background-color: var(--color-ui-body-background)">
       <header
         ref="header"
         class="sticky top-0 z-10 w-full border-b bg-ui-background border-ui-border"
@@ -10,7 +10,7 @@
       </header>
 
       <main
-        class="container relative flex flex-wrap justify-start flex-1 w-full bg-ui-background"
+        class="container relative flex flex-wrap justify-start flex-1 w-full"
       >
         <aside
           v-if="hasSidebar"
@@ -18,7 +18,7 @@
           :class="{ open: sidebarOpen }"
           :style="sidebarStyle"
         >
-          <div class="w-full pb-16 bg-ui-background">
+          <div class="w-full pb-16 ">
             <Sidebar @navigate="sidebarOpen = false" />
           </div>
         </aside>
@@ -149,6 +149,8 @@ export default {
 <style lang="scss">
 :root {
   --color-ui-background: theme('colors.white');
+  --color-ui-body-background: #fafafa;
+  --color-ui-nav-link-active: #EFEFEF;
   --color-ui-typo: #3c3c3b;
   --color-ui-sidebar: theme('colors.gray.200');
   --color-ui-border: theme('colors.gray.300');
@@ -157,6 +159,8 @@ export default {
 
 html[lights-out] {
   --color-ui-background: theme('colors.gray.900');
+  --color-ui-body-background: theme('colors.gray.900');
+  --color-ui-nav-link-active: #283144;
   --color-ui-typo: theme('colors.gray.100');
   --color-ui-sidebar: theme('colors.gray.800');
   --color-ui-border: theme('colors.gray.800');
@@ -164,8 +168,7 @@ html[lights-out] {
 
   pre[class*='language-'],
   code[class*='language-'] {
-    @apply bg-ui-border;
-    
+    @apply bg-ui-border;  
   }
 }
 
@@ -398,4 +401,6 @@ h5 {
 .content a.no-underline {
   text-decoration: none;
 }
+
+
 </style>
