@@ -2,7 +2,7 @@
   <Layout>
       <section class="pt-16 flex flex-col items-center main-index">
       
-        <div class="max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 converters">
           <g-link
             to="/shopify/"
             class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-12 text-center home-card"
@@ -64,7 +64,7 @@
         </div>
 
         <footer>
-          © 2020 Udesly.com | <g-link to="/changelog/">Changelog</g-link> | <a href="https://www.udesly.com" target="_blank" rel="noopener noreferrer">Udesly</a> is by <a href="https://www.eclipse.srl/" target="_blank" rel="noopener noreferrer">Eclipse SRL</a> 
+          © 2020 <a href="https://www.udesly.com" target="_blank" rel="noopener noreferrer">Udesly.com</a> | <g-link to="/changelog/">Changelog</g-link> | <a href="https://www.udesly.com" target="_blank" rel="noopener noreferrer">Udesly</a> is by <a href="https://www.eclipse.srl/" target="_blank" rel="noopener noreferrer">Eclipse SRL</a> 
         </footer>
       </section>
   </Layout>
@@ -176,6 +176,10 @@ html .hide-on-light {
   justify-content: center;
 }
 
+.main-index {
+  height: 100%;
+  justify-content: center;
+}
 footer {
   font-size: 10px;
   font-weight: bold;
@@ -190,5 +194,11 @@ footer {
   .main-index a {
     max-width: 250px;
   }
+}
+div.converters {
+  width: 100%;
+}
+div.converters h5 {
+  font-size: 13px;
 }
 </style>
