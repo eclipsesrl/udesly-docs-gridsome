@@ -3,6 +3,11 @@
 
 # Changelog
 
+## 2.3.3 - May, 19 - 2020
+
+#### WooCommerce
+* Fixed missing hook inside variable add to cart.
+
 ## 2.3.2 - May, 19 - 2020
 
 #### Shopify

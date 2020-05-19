@@ -124,6 +124,11 @@ export default {
           content: title
         },
         {
+          key: 'og:image',
+          name: 'og:image',
+          content: 'https://docs.udesly.com/assets/images/udesly.jpg'
+        },
+        {
           key: 'og:description',
           name: 'og:description',
           content: description

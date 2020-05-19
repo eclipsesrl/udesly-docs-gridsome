@@ -103,6 +103,11 @@ export default {
           content: title,
         },
         {
+          key: 'og:image',
+          name: 'og:image',
+          content: 'https://docs.udesly.com/assets/images/udesly.jpg'
+        },
+        {
           key: 'twitter:title',
           name: 'twitter:title',
           content: title,
