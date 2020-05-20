@@ -40,7 +40,6 @@
               <SunIcon v-else size="1.5x" />
             </template>
           </ToggleDarkMode>
-
         </div>
       </div>
     </div>
@@ -67,7 +66,7 @@ query {
 <script>
 import ToggleDarkMode from "@/components/ToggleDarkMode";
 import Logo from '@/components/Logo';
-import { SunIcon, MoonIcon, GlobeIcon, GithubIcon, TwitterIcon } from "vue-feather-icons";
+import { SunIcon, MoonIcon, HomeIcon, GithubIcon, TwitterIcon } from "vue-feather-icons";
 import WordPressLogo from '@/components/WordPressLogo';
 import ShopifyLogo from '@/components/ShopifyLogo';
 import GhostLogo from '@/components/GhostLogo';
@@ -82,6 +81,7 @@ export default {
     ToggleDarkMode,
     SunIcon,
     MoonIcon,
+    HomeIcon,
     GithubIcon,
     TwitterIcon,
     WordPressLogo,

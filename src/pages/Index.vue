@@ -205,6 +205,7 @@ div.converters {
   }
   div.converters {
     width: auto;
+    min-width: 250px;
   }
 }
 
