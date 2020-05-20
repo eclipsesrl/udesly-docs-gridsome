@@ -49,7 +49,7 @@
               <h5>Cheat Sheets</h5>
               <p>The easiest way to add all the necessary custom attributes to your Webflow projects.</p>
             </a>
-             <a href="https://www.udesly.com/adapter-templates/" target="_blank" rel="noopener noreferrer" class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-8 text-center home-card home-card--align-left">
+             <a href="https://www.udesly.com/webflow-resources/adapter-templates/" target="_blank" rel="noopener noreferrer" class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-8 text-center home-card home-card--align-left">
               <h5>Templates</h5>
               <p>Explore our templates to save time and customize everything easily.</p>
             </a>
