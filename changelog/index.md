@@ -3,6 +3,11 @@
 
 # Changelog
 
+## 2.3.4 - May, 21 - 2020 
+
+#### WooCommerce 
+* Added 2 new elements relative to product attributes that can be used inside [Collection List Items](/wordpress/woocommerce/collection-item-elements/#attributes) and [Single Product](/wordpress/woocommerce/single-product-elements/#attributes) Page
+
 ## 2.3.3 - May, 19 - 2020
 
 #### WooCommerce

@@ -111,6 +111,49 @@ so keep it in mind when you create the design, use flex or grid thinking about t
 
 <CopyElement title="Variations">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"b2b471be-f1ea-cfaa-c785-6b6478369e9a","tag":"div","classes":["076c26e8-502b-444a-7182-c2df76ff6bc8"],"children":["e88ff0a5-1e92-7be4-03f9-6cc06ff171a0"],"type":"Block","data":{"tag":"div","xattr":[{"name":"item","value":"variations"}]}},{"_id":"e88ff0a5-1e92-7be4-03f9-6cc06ff171a0","tag":"div","classes":["5646cede-5c39-8aa3-51f4-c9379aca555c"],"children":["5ec761bb-fc71-789e-49a5-2a081bc28d87"],"type":"Block","data":{"tag":"div","text":true}},{"_id":"5ec761bb-fc71-789e-49a5-2a081bc28d87","text":true,"v":"Red"}],"styles":[{"_id":"076c26e8-502b-444a-7182-c2df76ff6bc8","fake":false,"type":"class","name":"Variations","namespace":"","comb":"","styleLess":"display: flex; margin-bottom: 10px; flex-wrap: wrap;","variants":{},"children":[],"selector":null},{"_id":"5646cede-5c39-8aa3-51f4-c9379aca555c","fake":false,"type":"class","name":"Variation Value","namespace":"","comb":"","styleLess":"margin-right: 5px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; background-image: @img_example_bg; background-position: 0px 0px; background-size: cover;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
+#### Attributes
+
+For each Product you can assign various attributes, like color, size, etc..
+
+This element can be added on any text using the attribute:
+
+<Attribute name="item" value="attributes" />
+
+<CopyElement title="Product Attributes">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"f55e2ef2-58e2-eaf5-6646-0176e81eff7d","tag":"div","classes":[],"children":["f55e2ef2-58e2-eaf5-6646-0176e81eff7e"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"attributes"}]}},{"_id":"f55e2ef2-58e2-eaf5-6646-0176e81eff7e","text":true,"v":"Color: Red, Blue"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+This text will be duplicated for each attribute you have set and will show in each of them a text in the format **Attribute name: values** as an example: **Color: Red, Blue**
+
+So as example if in your product you have set the attributes: Color, Size, Material, you will get 3 texts like:
+
+**Color: red blue**
+
+**Size: M, L**
+
+**Material: Glass**
+
+#### Attribute
+
+For each Product you can assign various attributes, like color, size, etc..
+
+This element can be added on any text using the attribute:
+
+<Attribute name="item" value="attribute" />
+
+<DynamicAttribute name="attribute" value="slug of the attribute" />
+
+This text will be duplicated for each value of the attribute you have chosen, so for example if you set:
+
+<Attribute name="item" value="attribute" />
+
+<Attribute name="attribute" value="color" />
+
+And in your product you have 3 values like Red, Blue, White you will get 3 texts.
+
+On each text also the adapter adds an html attribute called data-attribute-slug with the slug of the value, so you can further customize it with custom css.
+
+<CopyElement title="Product Attribute">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"ac8b34c0-03ea-1f3c-f30c-aae8f5dca6d2","tag":"div","classes":["4b6def9f-6611-9f23-1ba1-280e7dbae134"],"children":["bd61254a-bfb5-9f02-2854-419ce325e9fb"],"type":"Block","data":{"tag":"div"}},{"_id":"bd61254a-bfb5-9f02-2854-419ce325e9fb","tag":"div","classes":["9afcd333-8da3-1d6d-372a-d9f52b58b14e"],"children":["bd61254a-bfb5-9f02-2854-419ce325e9fc"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"item","value":"attribute"},{"name":"attribute","value":"color"}]}},{"_id":"bd61254a-bfb5-9f02-2854-419ce325e9fc","text":true,"v":"Blue"}],"styles":[{"_id":"4b6def9f-6611-9f23-1ba1-280e7dbae134","fake":false,"type":"class","name":"Attribute Values","namespace":"","comb":"","styleLess":"display: flex;","variants":{},"children":[],"selector":null},{"_id":"9afcd333-8da3-1d6d-372a-d9f52b58b14e","fake":false,"type":"class","name":"Attribute Value","namespace":"","comb":"","styleLess":"padding-top: 8px; padding-right: 10px; padding-bottom: 8px; padding-left: 10px;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+> Note that the attribute is inserted in the element with class Attribute Value, is wrapped inside a flex just for style! Don't forget to change the value color to your actual needs
 
 #### Rating
 
