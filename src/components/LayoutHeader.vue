@@ -129,7 +129,6 @@ header {
   padding: 2px;
   width: 34px;
   height: 34px;
-  border: 1px solid var(--color-ui-border);
   display: flex;
   align-items: center;
   justify-content: center;

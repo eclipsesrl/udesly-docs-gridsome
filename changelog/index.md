@@ -3,6 +3,12 @@
 
 # Changelog
 
+## 2.3.5 - May, 22 - 2020
+
+#### Shopify
+* Fixed bug with blocks label
+* Fixed bug for add to carts in single product page
+
 ## 2.3.4 - May, 21 - 2020 
 
 #### WooCommerce 
