@@ -45,6 +45,14 @@ You can use it both on images than background images.
   <g-image src="~/assets/images/netlify-images.png" />
 </div>
 
+### Multi Image
+
+This is an experimental field, and still needs more testing and functionalities.
+
+<DynamicAttribute name="multi-image" value="the name of the corresponding CMS field" />
+
+You can use it both on images and background images. The element where you apply the attribute to will be repeated once for each image set inside that field.
+
 ### Color & Background Color
 
 To change the text color and background color dinamically, you have to use these attribute:

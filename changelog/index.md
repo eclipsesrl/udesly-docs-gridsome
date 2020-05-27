@@ -3,6 +3,15 @@
 
 # Changelog
 
+## 2.3.6 - May, 27 - 2020
+
+#### Shopify
+* Fixed mini cart product featured image 
+
+#### Netlify 
+* Added Experimental multi image field
+* Fixed multiple csv fields causing broken installations
+
 ## 2.3.5 - May, 22 - 2020
 
 #### Shopify
