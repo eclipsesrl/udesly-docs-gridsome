@@ -1,6 +1,7 @@
 ---
 sidebar: 'wordpress'
 prev: '/wordpress/general/boxes/'
+next: '/wordpress/general/global-options/'
 ---
 import Attribute from '@/components/Attribute.vue';
 import DynamicAttribute from '@/components/DynamicAttribute.vue';

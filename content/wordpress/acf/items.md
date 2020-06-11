@@ -26,7 +26,14 @@ To insert an ACF Text field, you have to use a **Text Block** or **Paragraph** o
 To insert an ACF Text Area field, you have to use a **Text Block** and insert the following attributes:
 ​
 <DynamicAttribute name="acf:textarea" value="field-slug" />
+
+## RichText
+
+To insert an ACF Rich Text field, you have to use a **RichText** element and insert the following attribute:
+
+<DynamicAttribute name="acf:richtext" value="field-slug" />
 ​
+
 ## Number
 To insert an ACF Number field, you have to use a **Text Block** or **Paragraph** or **Heading** and insert the following attributes:
 ​

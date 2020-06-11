@@ -3,6 +3,20 @@
 
 # Changelog
 
+## 2.3.8 - June, 11 - 2020
+
+#### All CMSs
+* Added automatic conversion for data-src attribute
+
+#### WordPress Doc
+* Added missing element documentation richtext for ACF
+* Added missing documentation for [global options](/wordpress/general/global-options/)
+
+## 2.3.7 - June, 01 - 2020
+
+#### Shopify
+* Fixed mini cart image, now showing selected variation
+
 ## 2.3.6 - May, 27 - 2020
 
 #### Shopify

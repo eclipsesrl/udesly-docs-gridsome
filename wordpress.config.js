@@ -69,6 +69,7 @@ module.exports.sidebar = {
           '/wordpress/general/social-links/',
           '/wordpress/general/boxes/',
           '/wordpress/general/php-elements/',
+          '/wordpress/general/global-options/'
         ]
       },
       {
