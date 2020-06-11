@@ -333,7 +333,7 @@ You don't need anymore to use apps to create variation swatches, just add the de
 
 * A Div element with attribute:
 
-<Attribute name="item" value="option" />
+<Attribute name="item" value="option-wrapper" />
 
 Inside this div add 2 label with respectively the attributes:
 
