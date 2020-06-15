@@ -205,3 +205,45 @@ to navigate to the next page and
 to navigate to the previous page.
 
 <CopyElement title="Internal Navigation">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"a3aa3459-444f-18d1-69cf-c202bb4766e1","tag":"div","classes":["cbd81967-1db7-dcf0-23e3-86a578e6bd82"],"children":["d8b54579-ca31-3a9a-08ac-adb5665508af","13ae03be-da08-497b-dcd2-d6cbd6599952"],"type":"Block","data":{"tag":"div"}},{"_id":"d8b54579-ca31-3a9a-08ac-adb5665508af","tag":"a","classes":[],"children":["3053f012-2a77-dfbc-6f77-6a40d8341cf5"],"type":"Link","data":{"button":true,"link":{"url":"#","mode":"external"},"style":{"base":{"main":{"noPseudo":{"alignSelf":"center","justifySelf":"center","gridColumnEnd":2,"gridColumnStart":1,"gridRowEnd":2,"gridRowStart":1}}}},"xattr":[{"name":"item","value":"prev-page"}],"attr":{"href":"#"}}},{"_id":"3053f012-2a77-dfbc-6f77-6a40d8341cf5","text":true,"v":"Previous Page"},{"_id":"13ae03be-da08-497b-dcd2-d6cbd6599952","tag":"a","classes":[],"children":["13ae03be-da08-497b-dcd2-d6cbd6599953"],"type":"Link","data":{"button":true,"link":{"url":"#","mode":"external"},"style":{"base":{"main":{"noPseudo":{"alignSelf":"center","justifySelf":"center","gridColumnEnd":3,"gridColumnStart":2,"gridRowEnd":2,"gridRowStart":1}}}},"xattr":[{"name":"item","value":"next-page"}],"attr":{"href":"#"}}},{"_id":"13ae03be-da08-497b-dcd2-d6cbd6599953","text":true,"v":"Next Page"}],"styles":[{"_id":"cbd81967-1db7-dcf0-23e3-86a578e6bd82","fake":false,"type":"class","name":"Div Block","namespace":"","comb":"","styleLess":"display: grid; grid-auto-columns: 1fr; grid-column-gap: 16px; grid-row-gap: 16px; grid-template-columns: 1fr 1fr; grid-template-rows: auto;","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
+
+#### Previous and Next Posts
+
+Sometimes it can be usefull to enhance your users engagement to add datas for next and previous posts.
+
+To create them, just add a div with respectively:
+
+<Attribute name="item" value="next-post" />
+
+to create a space for the next post and 
+
+<Attribute name="item" value="prev-post" />
+
+to create a space for the previous post.
+
+Inside this divs you can add the following elements:
+
+##### Title
+
+On texts you can add the attribute:
+
+<Attribute name="item" value="title" />
+
+##### Featured Image
+
+On images or divs you can add instead the attribute:
+
+<Attribute name="item" value="featured-image" />
+
+##### Excerpt
+
+If you want on texts you can add the attribute:
+
+<Attribute name="item" value="excerpt" />
+
+##### Permalink
+
+On Links instead you can add the attribute:
+
+<Attribute name="item" value="permalink" />
+
+<CopyElement title="Next and Prev Posts">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"0db83c0f-1ae6-af6f-440e-0f82a713ae73","tag":"div","classes":["38e4f140-3c95-341b-d5ae-00dca98023d5"],"children":["3a2931c7-c251-c694-0f0c-17790ea17398","04d63fce-c3cd-932d-83cb-df5bbc39b273"],"type":"Block","data":{"tag":"div"}},{"_id":"3a2931c7-c251-c694-0f0c-17790ea17398","tag":"div","classes":["a1ab489c-b6f1-b2bc-89f2-60a7e4a2b6e3"],"children":["cdcf4d49-0f83-72fa-0951-c4cd174a766d"],"type":"Block","data":{"tag":"div","style":{"base":{"main":{"noPseudo":{"gridColumnEnd":2,"gridColumnStart":1,"gridRowEnd":2,"gridRowStart":1,"alignSelf":"center","justifySelf":"center"}}}},"xattr":[{"name":"item","value":"prev-post"}]}},{"_id":"cdcf4d49-0f83-72fa-0951-c4cd174a766d","tag":"a","classes":[],"children":["3985bdd9-e1ce-9baa-025e-3708f5c98320"],"type":"Link","data":{"block":"inline","link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}},{"_id":"3985bdd9-e1ce-9baa-025e-3708f5c98320","tag":"h4","classes":[],"children":["3985bdd9-e1ce-9baa-025e-3708f5c98321"],"type":"Heading","data":{"tag":"h4","xattr":[{"name":"item","value":"title"}]}},{"_id":"3985bdd9-e1ce-9baa-025e-3708f5c98321","text":true,"v":"Prev Post Title"},{"_id":"04d63fce-c3cd-932d-83cb-df5bbc39b273","tag":"div","classes":["6a48bba1-deb5-5baa-926d-edf2052aaef9"],"children":["f4abb3fd-461a-c2a4-1c13-0cf79266b1b9"],"type":"Block","data":{"tag":"div","style":{"base":{"main":{"noPseudo":{"gridColumnEnd":3,"gridColumnStart":2,"gridRowEnd":2,"gridRowStart":1,"alignSelf":"center","justifySelf":"center"}}}},"xattr":[{"name":"item","value":"next-post"}]}},{"_id":"f4abb3fd-461a-c2a4-1c13-0cf79266b1b9","tag":"a","classes":[],"children":["f4abb3fd-461a-c2a4-1c13-0cf79266b1ba"],"type":"Link","data":{"block":"inline","link":{"mode":"external","url":"#"},"xattr":[{"name":"item","value":"permalink"}]}},{"_id":"f4abb3fd-461a-c2a4-1c13-0cf79266b1ba","tag":"h4","classes":[],"children":["f4abb3fd-461a-c2a4-1c13-0cf79266b1bb"],"type":"Heading","data":{"tag":"h4","xattr":[{"name":"item","value":"title"}]}},{"_id":"f4abb3fd-461a-c2a4-1c13-0cf79266b1bb","text":true,"v":"Next Post Title"}],"styles":[{"_id":"38e4f140-3c95-341b-d5ae-00dca98023d5","fake":false,"type":"class","name":"Adjacent Posts","namespace":"","comb":"","styleLess":"display: grid; justify-content: center; align-content: center; grid-auto-columns: 1fr; grid-column-gap: 16px; grid-row-gap: 16px; grid-template-columns: 1fr 1fr; grid-template-rows: auto;","variants":{},"children":[],"selector":null},{"_id":"a1ab489c-b6f1-b2bc-89f2-60a7e4a2b6e3","fake":false,"type":"class","name":"Previous Post","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null},{"_id":"6a48bba1-deb5-5baa-926d-edf2052aaef9","fake":false,"type":"class","name":"Next Post","namespace":"","comb":"","styleLess":"","variants":{},"children":[],"selector":null}],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>

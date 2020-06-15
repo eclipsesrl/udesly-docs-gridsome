@@ -3,6 +3,11 @@
 
 # Changelog
 
+## 2.3.9 - June, 15 - 2020
+
+#### WordPress
+* Added Prev/Next Post conversion
+
 ## 2.3.8 - June, 11 - 2020
 
 #### All CMSs
