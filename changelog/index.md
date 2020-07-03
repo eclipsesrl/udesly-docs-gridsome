@@ -3,6 +3,23 @@
 
 # Changelog
 
+## 2.3.12 - Jul, 03 - 2020
+
+#### WooCommerce
+* Added thank you actions for order confirmation page
+
+## 2.3.11 - Jun, 23 - 2020
+
+* Minor bug fix
+
+## 2.3.10 - June, 17 - 2020
+
+
+
+#### Shopify
+* Fixed wrong empty collection list conversion 
+
+
 ## 2.3.9 - June, 15 - 2020
 
 #### WordPress

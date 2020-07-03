@@ -108,7 +108,7 @@ This is the list of taxonomies of the post add it on a link element, this elemen
 
 and define the taxonomy with the attribute:
 
-<DynamicAttribute name="taxonomy" value="taxonomy-name" />
+<DynamicAttribute name="tax" value="taxonomy-name" />
 
 Optionally you can also add the following attribute to limit the number of categories to show:
 

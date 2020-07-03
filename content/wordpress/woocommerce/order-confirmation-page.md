@@ -28,6 +28,13 @@ Is the status of the order: (completed, failed, etc) can be added on texts using
 
 <Attribute name="order" value="status" />
 
+## Thank you Actions
+
+This is a div where the thank you actions of woocommerce will be injected, (these actions are usefull if you are having issues with cart not being emptied after checkout),
+add a div with attribute
+
+<Attribute name="order" value="thank-you-actions" />
+
 ## Number
 
 Is the order number, can be added on texts using the attribute:
@@ -116,3 +123,5 @@ Is the total price of the product (price times quantity) and can be added on tex
 Is the featured image of the product and can be added on divs as background image or on img using the attribute:
 
 <Attribute name="item" value="featured-image" />
+
+
