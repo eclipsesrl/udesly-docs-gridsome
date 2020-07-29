@@ -22,7 +22,7 @@ In order to use the Adapter you have to get an Udesly plan: Adapter (monthly/yea
 
 ## How it Works?
 
-The **Adapter** converts your Webflow exported files in PHP code and will give you back a .zip file that is ready to be installed in your WordPress.
+The **Adapter** converts your Webflow exported files in PHP code and will give you back a .zip file that is ready to be installed in your Shopify.
 
 Your design will be transferred along with your interactions, fonts, images etc... 
 
