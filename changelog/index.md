@@ -3,6 +3,23 @@
 
 # Changelog
 
+## 2.3.15 - Jul, 31 - 2020
+
+#### WordPress
+* Fixed woocommerce notices templates
+* Added checkbox to do not export ACF files
+* Fixed link to files
+
+## 2.3.14 - Jul, 16 - 2020
+
+#### Shopify
+* Fixed form success status
+
+## 2.3.13 - Jul, 06 - 2020
+
+#### Shopify
+* Added additional files uploader
+
 ## 2.3.12 - Jul, 03 - 2020
 
 #### WooCommerce
