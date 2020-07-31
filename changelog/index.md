@@ -3,6 +3,11 @@
 
 # Changelog
 
+## 2.3.16 - Jul, 31 - 2020
+
+#### Shopify
+* Fixed wrong custom error notification code
+
 ## 2.3.15 - Jul, 31 - 2020
 
 #### WordPress
