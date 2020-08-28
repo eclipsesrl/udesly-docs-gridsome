@@ -283,7 +283,7 @@ Valid options are:
 
 #### Product Images
 
-In WooCommerce you can associate multiple images to your product and you can show them on your theme just using the attribute:
+In Shopify you can associate multiple images to your product and you can show them on your theme just using the attribute:
 
 <Attribute name="item" value="product-images" />
 
