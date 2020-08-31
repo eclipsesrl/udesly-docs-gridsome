@@ -88,7 +88,18 @@ This is an on/off button and to insert an ACF Switch field, you can use **any el
 It allows to upload a file and to insert an ACF File field, you have to use a **Button** or **Link** element and add the following attributes:
 ​
 <DynamicAttribute name="acf:file" value="field-slug" />
-​
+
+## Object
+It allows you to select a post to be associated to your current post, add on a div the attribute:
+
+<DynamicAttribute name="acf:object" value="field-slug" />
+
+Inside this div you can add all elements that you can find at this page:
+
+<div align="center">
+<g-link class="ml-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors active--exact active no-underline" to="/wordpress/blog/collection-item-elements/">Collection Item Elements</g-link>
+</div>
+
 ## oEmbed
 The oEmbed field provides an interactive component for embedding videos, images, tweets, audio, and other content.
 To insert an ACF oEmbed field, you have to use a **Div Block** and insert the following attributes:

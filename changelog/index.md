@@ -3,6 +3,24 @@
 
 # Changelog
 
+## 2.3.18 - Aug, 31 - 2020
+
+#### Shopify
+* Added attribute item=add-to-cart that can be used inside shop:product div
+
+#### Netlify
+* Added automatic sitemap conversion
+
+#### WordPress
+* ACF used on taxonomy page will now use correct code to fetch data from taxonomy for certain types of ACF fields.
+* Added support for ACF Object.
+
+
+## 2.3.17 - Aug, 11 - 2020
+
+#### WordPress
+* Fixed adjacent posts links to show correct permalink
+
 ## 2.3.16 - Jul, 31 - 2020
 
 #### Shopify
