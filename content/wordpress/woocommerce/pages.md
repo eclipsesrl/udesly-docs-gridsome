@@ -19,7 +19,7 @@ To create a Shop Page that in WordPress terms is an Archive of Products just add
 
 <Attribute name="page" value="archive" />
 
-<Attibute name="post-type" value="product" />
+<Attribute name="post-type" value="product" />
 
 Don't forget after conversion and upload you have to declare your page for shop in WordPress following the path WooCommerce > Settings > Products > Shop Page.
 
