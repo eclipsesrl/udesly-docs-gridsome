@@ -2,6 +2,7 @@
 description: ''
 sidebar: 'shopify'
 prev: '/shopify/general/liquid/'
+next: '/shopify/general/metafields/'
 ---
 
 import Attribute from '@/components/Attribute.vue';

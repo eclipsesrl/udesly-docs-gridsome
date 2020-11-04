@@ -31,6 +31,7 @@ module.exports.sidebar = {
         "/shopify/shop/collection-item-elements/",
         "/shopify/shop/product-page-elements/",
         "/shopify/shop/cart-page/",
+        "/shopify/shop/gift-card-page/",
         "/shopify/shop/misc-elements/"
       ]
     },
@@ -61,7 +62,8 @@ module.exports.sidebar = {
         "/shopify/general/sections/",
         "/shopify/general/conditionals/",
         "/shopify/general/liquid/",
-        "/shopify/general/js-events/"
+        "/shopify/general/js-events/",
+        "/shopify/general/metafields/"
       ],
     },
     {

@@ -29,7 +29,6 @@ Also keep in mind that the page **Categories Template** that you can find under 
 
 or add any other page attribute to change it's functionality.
 
-
 ## Single Product Page
 
 To create a Single Product page just add the following attribute on the *Body* element of your page:

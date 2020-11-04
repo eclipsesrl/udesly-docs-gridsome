@@ -1,14 +1,15 @@
 module.exports.sidebar = {
-  name: "netlify",
+  name: "jamstack",
   sections: [
     {
       title: "Getting Started",
       items: [
-        "/netlify/",
-        "/netlify/requirements/",
-        "/netlify/deploy/",
-        "/netlify/collections/",
-        "/netlify/single/"
+        "/jamstack/",
+        "/jamstack/requirements/",
+        "/jamstack/how-to-convert/",
+        "/jamstack/local-development/",
+        "/jamstack/netlify/",
+        //"/jamstack/stackbit/"
       ],
     }
   ],

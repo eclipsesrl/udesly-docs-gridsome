@@ -28,12 +28,12 @@
             <h5>Webflow to Ghost</h5>
           </g-link>
           <g-link
-            to="/netlify/"
+            to="/jamstack/"
             class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-12 text-center home-card"
           >
-            <img src="/assets/images/webflow-to-netlify.svg" class="hide-on-dark" alt="webflow to netlify"/>
-            <img src="/assets/images/webflow-to-netlify-white.svg" class="hide-on-light" alt="webflow to netlify"/>
-            <h5>Webflow to Netlify</h5>
+            <img src="/assets/images/webflow-to-jamstack.svg" class="hide-on-dark" alt="webflow to netlify"/>
+            <img src="/assets/images/webflow-to-jamstack-white.svg" class="hide-on-light" alt="webflow to netlify"/>
+            <h5>Webflow to Jamstack</h5>
           </g-link>
         </div>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 features">
@@ -87,7 +87,7 @@ export default {
   },
 
   metaInfo() {
-    const title = 'How to convert Webflow to WordPress, Shopify, Ghost or Netlify CMS';
+    const title = 'How to convert Webflow to WordPress, Shopify, Ghost or Jamstack';
     const description = 'Udesly Adapter Documentation';
 
     return {

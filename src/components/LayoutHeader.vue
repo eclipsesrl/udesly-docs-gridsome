@@ -71,6 +71,7 @@ import WordPressLogo from '@/components/WordPressLogo';
 import ShopifyLogo from '@/components/ShopifyLogo';
 import GhostLogo from '@/components/GhostLogo';
 import NetlifyLogo from '@/components/NetlifyLogo';
+import JamstackLogo from '@/components/JamstackLogo';
 
 const Search = () => import(/* webpackChunkName: "search" */ "@/components/Search").catch(error => console.warn(error));
 
@@ -86,6 +87,7 @@ export default {
     TwitterIcon,
     WordPressLogo,
     NetlifyLogo,
+    JamstackLogo,
     GhostLogo,
     ShopifyLogo
   },

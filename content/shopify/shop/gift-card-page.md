@@ -71,6 +71,19 @@ This is the qrcode of the card. Insert a Text item and add the attribute:
 
 <CopyElement title="QR Code">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"a005de81-d74f-9648-15ab-8243e0bacb34","tag":"div","classes":[],"children":["59b03e7a-248c-174a-5ad8-cdfee6ed5568"],"type":"Block","data":{"tag":"div","text":true,"xattr":[{"name":"gift-card","value":"qr-code"}]}},{"_id":"59b03e7a-248c-174a-5ad8-cdfee6ed5568","text":true,"v":"QR code"}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
+If you use this element also add the following script in the before ```</body>``` section of this page:
+
+```
+​<script>
+​ var codeEl = document.getElementById('qr-code');
+  new QRCode(codeEl, {
+    text: codeEl.getAttribute('data-identifier'),
+    width: 120,
+    height: 120
+  });
+</script>
+```
+
 ## Code
 
 This is the code of the card. Insert a Text item and add the attribute:

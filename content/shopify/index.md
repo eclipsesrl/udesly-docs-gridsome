@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'shopify'
-next: '/wordpress/custom-attributes/'
+next: '/shopify/custom-attributes/'
 ---
 
 # Introduction

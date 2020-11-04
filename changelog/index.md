@@ -3,6 +3,14 @@
 
 # Changelog
 
+## 2.4.0 - Oct, 27 - 2020
+
+#### Shopify
+* Added metafields attributes
+
+#### Jamstack
+* Added Chrome Extension to automatically conver Jamstack Websites
+
 ## 2.3.18 - Aug, 31 - 2020
 
 #### Shopify

@@ -43,9 +43,9 @@ module.exports = {
           logo: 'GhostLogo'
         },
         {
-          path: '/netlify/',
-          title: 'NetlifyCMS',
-          logo: 'NetlifyLogo'
+          path: '/jamstack/',
+          title: 'Jamstack',
+          logo: 'JamstackLogo'
         }
       ],
     },

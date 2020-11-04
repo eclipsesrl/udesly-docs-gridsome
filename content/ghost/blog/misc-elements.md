@@ -142,6 +142,12 @@ This is the featured image of the current tag, on images or divs you can use the
 
 <CopyElement title="Tag Featured Image">{"type":"@webflow/XscpData","payload":{"nodes":[{"_id":"8732c7e2-568b-8fcd-d8fd-85773f80f628","tag":"img","classes":[],"children":[],"type":"Image","data":{"attr":{"src":"https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"},"img":{"id":"plugins/Basic/assets/placeholder.svg"},"xattr":[{"name":"item","value":"featured-image"}]}}],"styles":[],"assets":[],"ix1":[],"ix2":{"interactions":[],"events":[],"actionLists":[]}},"meta":{"unlinkedSymbolCount":0,"droppedLinks":0,"dynBindRemovedCount":0,"dynListBindRemovedCount":0,"paginationRemovedCount":0}}</CopyElement>
 
+#### Tag Url
+
+This is the url to the tag page, you can add it on any link element using the attribute:
+
+<Attribute name="item" value="url" />
+
 
 ## All Authors / List of Authors
 

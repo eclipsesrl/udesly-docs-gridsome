@@ -126,7 +126,18 @@ export default {
         threshold: 0.25,
       });
 
-      return fuse.search(this.query).slice(0, 15);
+      const results = fuse.search(this.query).slice(0, 15);
+
+      let cms = "";
+      try {
+        cms = window.location.pathname.split('/')[1]
+      } catch {
+
+      }
+      if (!cms) {
+        return results;
+      }
+      return results.filter( res => res.cms.includes(cms));
     },
     headings() {
       let result = [];
