@@ -28,3 +28,11 @@ video {
     max-width: 100%;
     height: auto;
 }
+
+div[align='center'] code {
+    margin: auto 3px;
+}
+
+div[align='center'] {
+    padding-bottom: 15px;
+}
