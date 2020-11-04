@@ -41,9 +41,9 @@
               <h5>Help Center</h5>
               <p>Contact us to get technical support or just submit bug reports or feature requests.</p>
             </a>
-             <a href="https://www.udesly.com/custom-services/" target="_blank" rel="noopener noreferrer" class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-8 text-center home-card home-card--align-left">
-              <h5>Custom Services</h5>
-              <p>Hire our experts for assistance with the Udesly Adapter conversion process.</p>
+             <a href="https://studio.udesly.com/" target="_blank" rel="noopener noreferrer" class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-8 text-center home-card home-card--align-left">
+              <h5>Udesly Studio</h5>
+              <p>Our team of <strong>Webflow experts</strong> is ready to assist you to speed up your workflow and create professional web projects.</p>
             </a>
              <a href="https://cheatsheets.udesly.com/" target="_blank" rel="noopener noreferrer" class="max-w-sm border-solid border rounded overflow-hidden transition-all hover:shadow-lg p-8 text-center home-card home-card--align-left">
               <h5>Cheat Sheets</h5>
