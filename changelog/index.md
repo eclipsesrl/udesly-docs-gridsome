@@ -9,7 +9,7 @@
 * Added metafields attributes
 
 #### Jamstack
-* Added Chrome Extension to automatically conver Jamstack Websites
+* Added Chrome Extension to automatically convert Jamstack powered Websites
 
 ## 2.3.18 - Aug, 31 - 2020
 
