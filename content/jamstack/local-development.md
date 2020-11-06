@@ -44,3 +44,7 @@ If you want to find all your converted html templates, they can be found at the 
 All your markdown files can be found in **"site"** folder under their own subfolders. So you can just modify your cms content creating and modifying your markdown files!
 
 We greatly suggest using a code editor like [Visual Studio Code](https://code.visualstudio.com/), to manage your files.
+
+### Local Netlify CMS
+
+There is a beta feature of Netlify CMS that allows to work with Netlify CMS on local repo, follow their [Official Documentation](https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository)

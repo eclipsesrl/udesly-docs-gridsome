@@ -3,7 +3,22 @@
 
 # Changelog
 
-## 2.4.0 - Oct, 27 - 2020
+## 2.4.3 - Nov, 6 - 2020
+#### Jamstack
+* Tweaked Netlify CMS config.yml SEO is now collapsed by default
+
+## 2.4.2 - Nov, 5 - 2020
+#### Jamstack
+* Tweaked filter function
+
+#### WordPress
+* Fixed Conditional ACF for taxonomy pages
+
+## 2.4.1 - Nov, 5 - 2020
+#### Jamstack
+* Bugfixed filter for Exists condition
+
+## 2.4.0 - Nov, 4 - 2020
 
 #### Shopify
 * Added metafields attributes

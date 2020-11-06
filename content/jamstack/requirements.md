@@ -28,3 +28,5 @@ Well, it is! Because there is a special extension that adds every custom attribu
 There are a few requirements for the CMS to be converted correctly. (Well just one )
 
 1) Do not use *tags* as collection name! They are already used by 11ty. Give another name to them!
+
+2) Do not use *date* as field name! It's reserved by 11ty!
