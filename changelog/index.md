@@ -3,6 +3,14 @@
 
 # Changelog
 
+## 2.4.5 - Nov, 9 - 2020
+#### Jamstack
+* Tweaked conversion to escape data inside html attributes correctly
+
+## 2.4.4 - Nov, 9 - 2020
+#### Jamstack
+* Fixed config.yaml to use correctly reference fields
+
 ## 2.4.3 - Nov, 6 - 2020
 #### Jamstack
 * Tweaked Netlify CMS config.yml SEO is now collapsed by default
