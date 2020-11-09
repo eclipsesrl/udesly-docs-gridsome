@@ -37,6 +37,8 @@ Once Github and Netlify have been connected to each other, the latter will deplo
 It's done. In just a few steps you have created a full static site on Webflow!
 ​
 In the meantime Netlify is building your site, keep in mind these recommendations:
+
+## Invite users
 ​
 Go to **Settings-->Identity** and click on **Enable Identity**.
 ​
@@ -64,6 +66,20 @@ Finally go to **Identity** from the main menu and click on **Invite users** to m
   <g-image src="~/assets/images/netlify-invite.png" />
 </div>
 
-Last important thing to see is how to add a custom domain to your site. Check this [guide](https://docs.netlify.com/domains-https/custom-domains/#assign-a-domain-to-a-site).
+## Add a custom domain
 
+To add a custom domain to your site, check this [guide](https://docs.netlify.com/domains-https/custom-domains/#assign-a-domain-to-a-site).
 
+## Setup Netlify Forms
+
+Netlify comes with built-in form handling, which includes a spam filter and a page to view form submissions history and configure notifications.
+
+All you need to do in Webflow is:
+1. Add attribute **data-netlify="true"** on the form element (select the child element of the Form Block)
+2. In the form **action** setting, define the path to a page to redirect the user after form submission
+
+<div align="center">
+  <g-image src="~/assets/images/netlify-forms-webflow.png" />
+</div>
+
+Check out the [Netlify documentation](https://docs.netlify.com/forms/setup/) for more information on how to set up Google ReCaptcha with a hidden div, and more.
