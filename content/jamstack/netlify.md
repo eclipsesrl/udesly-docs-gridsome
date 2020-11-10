@@ -77,7 +77,10 @@ To add a custom domain to your site, check this [guide](https://docs.netlify.com
 Netlify comes with built-in form handling, which includes a spam filter and a page to view form submissions history and configure notifications.
 
 All you need to do in Webflow is:
-1. Add attribute <Attribute name="data-netlify" value="true" /> on the form element (select the child element of the Form Block)
+
+1. Add this attribute on the form element (select the child element of the Form Block):
+<Attribute name="data-netlify" value="true" />
+
 2. In the form **action** setting, define the path to a page to redirect the user after form submission
 
 <div align="center">
