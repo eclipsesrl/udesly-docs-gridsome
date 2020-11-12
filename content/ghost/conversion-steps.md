@@ -44,7 +44,7 @@ After Upload, **don't forget to activate the theme!**
 If you don't have already the Udesly Plugin activated, you will get a notice just follow the on screen instruction
 
 <div align="center">
-  <g-image src="~/assets/images/activate-udesly-plugin.png" />
+  <a src="~/assets/images/activate-udesly-plugin.png" />
 </div>
 
 ## Final Steps

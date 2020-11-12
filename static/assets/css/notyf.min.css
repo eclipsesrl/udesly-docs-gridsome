@@ -36,3 +36,8 @@ div[align='center'] code {
 div[align='center'] {
     padding-bottom: 15px;
 }
+
+pre {
+    max-width: 100%;
+    overflow: auto;
+}
