@@ -343,7 +343,7 @@ and
 
 <Attribute name="item" value="option" />
 
-On both this label you can stylize using the combo classes **selected** and **soldout**, to create very modern looking selectors!
+On both this label you can stylize using the combo classes **selected**, to create very modern looking selectors!
 
 *Note that in order to make the color works, the name of the variation must be a valid css color name*
 
