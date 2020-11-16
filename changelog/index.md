@@ -3,6 +3,14 @@
 
 # Changelog
 
+## 2.5.2 - Nov, 16 - 2020
+#### WordPress
+* Added tweak for wc:specific-product
+
+## 2.5.1 - Nov, 16 - 2020
+#### Shopify
+* Added few attributes for mini cart
+
 ## 2.5.0 - Nov, 13 - 2020
 #### Jamstack
 * Added automatic Snipcart conversion

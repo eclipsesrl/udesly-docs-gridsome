@@ -142,6 +142,8 @@ Sometimes you need to feature up a specific product permanently in your site, to
 
 <DynamicAttribute name="wc:specific-product" value="slug or id of the product" />
 
+Only in Single product page and Template for single product you can set "current" as slug, to target the current global product
+
 Inside the div you can add all of the elements that you find in the page:
 <div align="center">
 <g-link class="ml-auto text-ui-primary font-bold px-4 py-2 border border-ui-border rounded-lg hover:bg-ui-primary hover:text-white transition-colors active--exact active no-underline" to="/wordpress/woocommerce/collection-item-elements/">Collection Item Elements</g-link>

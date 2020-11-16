@@ -108,6 +108,24 @@ Can be added on texts using the attribute:
 
 <Attribute name="item" value="quantity" />
 
+* Quantity Input
+
+Can be added on texts using the attribute, this element will be converted into a numeric input: 
+
+<Attribute name="item" value="quantity-input" />
+
+* Quantity Minus
+
+Only if you used also quantity input you can add an element with attribute to change the quantity of the cart item
+
+<Attribute name="item" value="quantity-minus" />
+
+* Quantity Plus
+
+Only if you used also quantity input you can add an element with attribute to change the quantity of the cart item
+
+<Attribute name="item" value="quantity-plus" />
+
 * Link 
 
 Can be added on links using the attribute: 
