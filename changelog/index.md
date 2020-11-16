@@ -3,6 +3,10 @@
 
 # Changelog
 
+## 2.5.0 - Nov, 13 - 2020
+#### Jamstack
+* Added automatic Snipcart conversion
+
 ## 2.4.5 - Nov, 9 - 2020
 #### Jamstack
 * Tweaked conversion to escape data inside html attributes correctly

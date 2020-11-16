@@ -70,6 +70,8 @@ Naturally these are the default values that Snipcart css uses, but you can modif
 
 ## How to manage your products with Netlify CMS
 
+[Follow this doc if you didn't configured Netlify CMS yet!](/jamstack/netlify/)
+
 Products are actually managed in 2 different collections: **Products** and **SKUs**. 
 
 We really suggest to create your initial products all in Webflow, (you can add a minimuum of products already without any hosting plan) so they will be automatically inserted in the correct way inside Netlify CMS.

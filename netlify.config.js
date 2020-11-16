@@ -9,7 +9,7 @@ module.exports.sidebar = {
         "/jamstack/how-to-convert/",
         "/jamstack/local-development/",
         "/jamstack/netlify/",
-        //"/jamstack/snipcart/"
+        "/jamstack/snipcart/"
         //"/jamstack/stackbit/"
       ],
     }
