@@ -3,6 +3,13 @@
 
 # Changelog
 
+## 2.5.3 - Nov, 18 - 2020
+#### Shopify
+* Fixed item=quantity for cart element
+
+#### Jamstack
+* Tweaked conversion for conditional visibility on Dynamic pages
+
 ## 2.5.2 - Nov, 16 - 2020
 #### WordPress
 * Added tweak for wc:specific-product
