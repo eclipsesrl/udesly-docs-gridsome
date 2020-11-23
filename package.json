@@ -1,7 +1,7 @@
 {
   "name": "udesly-docs-gridsome",
   "private": true,
-  "version": "2.5.3",
+  "version": "2.5.5",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",

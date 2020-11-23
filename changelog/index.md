@@ -2,6 +2,13 @@
 ---
 
 # Changelog
+## 2.5.5 - Nov, 23 - 2020
+#### Jamstack
+* Fixed missing richtext binding
+
+## 2.5.4 - Nov, 21 - 2020
+#### Shopify
+* Fixed missing class on add to cart form
 
 ## 2.5.3 - Nov, 18 - 2020
 #### Shopify
