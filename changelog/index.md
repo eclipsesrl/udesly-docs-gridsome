@@ -2,6 +2,15 @@
 ---
 
 # Changelog
+
+## 2.5.7 - Nov, 28 - 2020
+#### Jamstack
+* Minor bug fix on filters
+
+## 2.5.6 - Nov, 26 - 2020
+#### Jamstack
+* Added link to Stackbit
+
 ## 2.5.5 - Nov, 23 - 2020
 #### Jamstack
 * Fixed missing richtext binding
