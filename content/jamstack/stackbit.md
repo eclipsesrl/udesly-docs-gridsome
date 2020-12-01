@@ -3,7 +3,9 @@ sidebar: 'jamstack'
 prev: '/jamstack/how-to-convert/'
 ---
 
-# What is Stackbit?
+# Edit with Stackbit
+
+## What is Stackbit?
 
 [Stackbit](https://www.stackbit.com/) is the first open, complete platform for the Jamstack. It’s the easiest way to get started with the best tools for the modern web. Whether you're a designer switching from Webflow or other design-first platforms, a developer getting started on the Jamstack, or a marketer looking to leverage modern web tech, Stackbit enables you to easily build and edit Jamstack sites using a [simple, intuitive interface](https://www.stackbit.com/blog/announcing-stackbit-studio/). Webflow sites joining the Jamstack architecture are faster, more secure, enjoy more integrations and tooling and now, with Stackbit, are finally easy to maintain by anyone — so we can all make the web, better. 
 
