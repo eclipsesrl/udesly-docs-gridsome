@@ -19,7 +19,7 @@ Unlocking the power of Jamstack sites for designers, developers, marketers and a
   <g-image src="~/assets/images/stackbit-0.png" />
 </div>
 
-**Importing your Webflow site to Stackbit with Udesly**
+## Importing your Webflow site to Stackbit with Udesly
 
 After you follow the instructions to convert your Webflow site to the Jamstack, you’ll see an option to Create With Stackbit.
 
