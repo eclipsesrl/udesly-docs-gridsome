@@ -19,9 +19,9 @@ A section can be created on a limited number of element tags: (Article, Header, 
 
 The *section name* must be unique per site, otherwise they will be simply converted once and then repeated (like Symbols).
 
-Only in *Home Page* sections can became dynamic adding the attribute:
-
 Section Name can't be too complex, is way way better to use a one word value, like "Banner" or "Newsletter".
+
+Only in *Home Page* sections can became dynamic adding the attribute:
 
 <Attribute name="dynamic" value="true" />
 
