@@ -31,7 +31,7 @@ You have to keep in mind 3 main features:
 
 3. [**Specificity**](#specificity)
 
-> Remember that since Wordpress is born simply as a Blog CMS, actually if he can't find an appropriate page, the Archive Page will be used as fallback.
+> Remember that since Wordpress was born simply as a Blog CMS, actually if it can't find an appropriate page, the Archive Page will be used as fallback.
 
 
 ## Page Type
