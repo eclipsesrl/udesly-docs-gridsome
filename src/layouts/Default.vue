@@ -6,6 +6,11 @@
         class="sticky top-0 z-10 w-full border-b bg-ui-background border-ui-border"
         @resize="setHeaderHeight"
       >
+      <div class="py-2" style="background-color: var(--color-ui-primary);">
+            <div class="container">
+                <p style="text-align: center; margin-bottom: 0;">⚠️ This docs are only for the Adapter Legacy. If you are using the new App, you must refer to the <a style="text-decoration: underline;" target="_blank" href="https://university.udesly.com">University!</a> ⚠️</p>
+            </div>
+          </div>
         <LayoutHeader />
       </header>
 
