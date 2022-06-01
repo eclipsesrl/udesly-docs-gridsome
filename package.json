@@ -12,7 +12,7 @@
     "gridsome": "^0.7.21",
     "notyf": "^3.6.0",
     "nprogress": "^0.2.0",
-    "sharp": "^0.26.2",
+    "sharp": "^0.30.5",
     "showdown": "^1.9.1"
   },
   "devDependencies": {
